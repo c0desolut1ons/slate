@@ -23,7 +23,7 @@ Termin3 API is HTTP-based RESTful API that allows you to seamlessly integrate Te
 
 Base URLs:
 
-* <a href="http://localhost:33301">http://localhost:33301</a>
+* <a href="/">/</a>
 
 
 
@@ -45,14 +45,14 @@ Base URLs:
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/organizations/{org_db}/appointments/available?date_from=string&date_to=string \
+curl -X GET //organizations/{org_db}/appointments/available?date_from=string&date_to=string \
   -H 'Accept: text/html'
 
 ```
 
 ```http
-GET http://localhost:33301/organizations/{org_db}/appointments/available?date_from=string&date_to=string HTTP/1.1
-Host: localhost:33301
+GET //organizations/{org_db}/appointments/available?date_from=string&date_to=string HTTP/1.1
+Host: null
 
 Accept: text/html
 
@@ -65,7 +65,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/organizations/{org_db}/appointments/available',
+  url: '//organizations/{org_db}/appointments/available',
   method: 'get',
   data: '?date_from=string&date_to=string',
   headers: headers,
@@ -83,7 +83,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/organizations/{org_db}/appointments/available?date_from=string&date_to=string',
+fetch('//organizations/{org_db}/appointments/available?date_from=string&date_to=string',
 {
   method: 'GET',
 
@@ -104,7 +104,7 @@ headers = {
   'Accept' => 'text/html'
 }
 
-result = RestClient.get 'http://localhost:33301/organizations/{org_db}/appointments/available',
+result = RestClient.get '//organizations/{org_db}/appointments/available',
   params: {
   'date_from' => 'string',
 'date_to' => 'string'
@@ -119,7 +119,7 @@ headers = {
   'Accept': 'text/html'
 }
 
-r = requests.get('http://localhost:33301/organizations/{org_db}/appointments/available', params={
+r = requests.get('//organizations/{org_db}/appointments/available', params={
   'date_from': 'string',  'date_to': 'string'
 }, headers = headers)
 
@@ -127,7 +127,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/organizations/{org_db}/appointments/available?date_from=string&date_to=string");
+URL obj = new URL("//organizations/{org_db}/appointments/available?date_from=string&date_to=string");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -161,9 +161,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
 [
   {
     "status": "step_1",
-    "time_start": "2017-11-14T23:52:40Z",
-    "time_end": "2017-11-14T23:52:40Z",
-    "sms_reminder": "2017-11-14T23:52:40Z",
+    "time_start": "2017-11-27T23:27:40Z",
+    "time_end": "2017-11-27T23:27:40Z",
+    "sms_reminder": "2017-11-27T23:27:40Z",
     "note": "string",
     "id_client": "string",
     "id_service": "string",
@@ -176,9 +176,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "id_recurring_meta": "string",
     "freq": "once",
     "recurring_state": "no_recurring",
-    "recurring_exception_date": "2017-11-14T23:52:40Z",
+    "recurring_exception_date": "2017-11-27T23:27:40Z",
     "recurring_dates": [
-      "2017-11-14T23:52:40Z"
+      "2017-11-27T23:27:40Z"
     ],
     "booking_info": {
       "client_name": "string",
@@ -197,9 +197,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-14T23:52:40Z",
-    "time_update": "2017-11-14T23:52:40Z",
-    "time_delete": "2017-11-14T23:52:40Z",
+    "time_create": "2017-11-27T23:27:40Z",
+    "time_update": "2017-11-27T23:27:40Z",
+    "time_delete": "2017-11-27T23:27:40Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -284,14 +284,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X PUT http://localhost:33301/organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string \
+curl -X PUT //organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string \
   -H 'Accept: text/html'
 
 ```
 
 ```http
-PUT http://localhost:33301/organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string HTTP/1.1
-Host: localhost:33301
+PUT //organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string HTTP/1.1
+Host: null
 
 Accept: text/html
 
@@ -304,7 +304,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/organizations/{org_db}/appointments/available/{id}',
+  url: '//organizations/{org_db}/appointments/available/{id}',
   method: 'put',
   data: '?name=string&phone_number=string',
   headers: headers,
@@ -322,7 +322,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string',
+fetch('//organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string',
 {
   method: 'PUT',
 
@@ -343,7 +343,7 @@ headers = {
   'Accept' => 'text/html'
 }
 
-result = RestClient.put 'http://localhost:33301/organizations/{org_db}/appointments/available/{id}',
+result = RestClient.put '//organizations/{org_db}/appointments/available/{id}',
   params: {
   'name' => 'string',
 'phone_number' => 'string'
@@ -358,7 +358,7 @@ headers = {
   'Accept': 'text/html'
 }
 
-r = requests.put('http://localhost:33301/organizations/{org_db}/appointments/available/{id}', params={
+r = requests.put('//organizations/{org_db}/appointments/available/{id}', params={
   'name': 'string',  'phone_number': 'string'
 }, headers = headers)
 
@@ -366,7 +366,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string");
+URL obj = new URL("//organizations/{org_db}/appointments/available/{id}?name=string&phone_number=string");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("PUT");
 int responseCode = con.getResponseCode();
@@ -454,7 +454,7 @@ simple|string|false|No description
 This operation does not require authentication
 </aside>
 
-# Domain
+# Domains
 
 ## DomainApiRead
 
@@ -462,14 +462,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/domains/{name} \
+curl -X GET //domains/{name} \
   -H 'Accept: text/html'
 
 ```
 
 ```http
-GET http://localhost:33301/domains/{name} HTTP/1.1
-Host: localhost:33301
+GET //domains/{name} HTTP/1.1
+Host: null
 
 Accept: text/html
 
@@ -482,7 +482,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/domains/{name}',
+  url: '//domains/{name}',
   method: 'get',
 
   headers: headers,
@@ -500,7 +500,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/domains/{name}',
+fetch('//domains/{name}',
 {
   method: 'GET',
 
@@ -521,7 +521,7 @@ headers = {
   'Accept' => 'text/html'
 }
 
-result = RestClient.get 'http://localhost:33301/domains/{name}',
+result = RestClient.get '//domains/{name}',
   params: {
   }, headers: headers
 
@@ -534,7 +534,7 @@ headers = {
   'Accept': 'text/html'
 }
 
-r = requests.get('http://localhost:33301/domains/{name}', params={
+r = requests.get('//domains/{name}', params={
 
 }, headers = headers)
 
@@ -542,7 +542,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/domains/{name}");
+URL obj = new URL("//domains/{name}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -574,15 +574,16 @@ name|path|string|true|
 {
   "domain_name": "string",
   "org_db": "string",
-  "time_created": "2017-11-14T23:52:40Z",
+  "time_created": "2017-11-27T23:27:40Z",
   "is_available": true,
   "is_public": true,
+  "days_ahead": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -610,6 +611,7 @@ org_db|string|false|Organization database name
 time_created|string(date-time)|false|Date and time when domain was created
 is_available|boolean|false|Is domain available. If not then it is already reserved by someone else.
 is_public|boolean|false|Is domain public, meaning if reserved domain has been publicly released.
+days_ahead|number(double)|false|Days ahead shown on portal
 _id|string|false|Database record identifier
 _rev|string|false|Database record revision
 type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -645,14 +647,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/organizations/{org_db} \
+curl -X GET //organizations/{org_db} \
   -H 'Accept: text/html'
 
 ```
 
 ```http
-GET http://localhost:33301/organizations/{org_db} HTTP/1.1
-Host: localhost:33301
+GET //organizations/{org_db} HTTP/1.1
+Host: null
 
 Accept: text/html
 
@@ -665,7 +667,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/organizations/{org_db}',
+  url: '//organizations/{org_db}',
   method: 'get',
 
   headers: headers,
@@ -683,7 +685,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/organizations/{org_db}',
+fetch('//organizations/{org_db}',
 {
   method: 'GET',
 
@@ -704,7 +706,7 @@ headers = {
   'Accept' => 'text/html'
 }
 
-result = RestClient.get 'http://localhost:33301/organizations/{org_db}',
+result = RestClient.get '//organizations/{org_db}',
   params: {
   }, headers: headers
 
@@ -717,7 +719,7 @@ headers = {
   'Accept': 'text/html'
 }
 
-r = requests.get('http://localhost:33301/organizations/{org_db}', params={
+r = requests.get('//organizations/{org_db}', params={
 
 }, headers = headers)
 
@@ -725,7 +727,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/organizations/{org_db}");
+URL obj = new URL("//organizations/{org_db}");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -775,12 +777,12 @@ org_db|path|string|true|Organization database name
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-      "global": "2017-11-14T23:52:40Z"
+      "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+      "global": "2017-11-27T23:27:40Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-      "global": "2017-11-14T23:52:40Z"
+      "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+      "global": "2017-11-27T23:27:40Z"
     },
     "staff": {
       "admin": {
@@ -795,24 +797,25 @@ org_db|path|string|true|Organization database name
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-11-14T23:52:40Z",
+    "last_run": "2017-11-27T23:27:40Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-11-14T23:52:40Z",
+    "termin_last_date": "2017-11-27T23:27:40Z",
     "termins_in_future": 0
   },
   "portal": {
     "domain_name": "string",
     "org_db": "string",
-    "time_created": "2017-11-14T23:52:40Z",
+    "time_created": "2017-11-27T23:27:40Z",
     "is_available": true,
     "is_public": true,
+    "days_ahead": 0,
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-14T23:52:40Z",
-    "time_update": "2017-11-14T23:52:40Z",
-    "time_delete": "2017-11-14T23:52:40Z",
+    "time_create": "2017-11-27T23:27:40Z",
+    "time_update": "2017-11-27T23:27:40Z",
+    "time_delete": "2017-11-27T23:27:40Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -821,9 +824,9 @@ org_db|path|string|true|Organization database name
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -888,6 +891,7 @@ portal|object|false|Portal info
 » time_created|string(date-time)|false|Date and time when domain was created
 » is_available|boolean|false|Is domain available. If not then it is already reserved by someone else.
 » is_public|boolean|false|Is domain public, meaning if reserved domain has been publicly released.
+» days_ahead|number(double)|false|Days ahead shown on portal
 » _id|string|false|Database record identifier
 » _rev|string|false|Database record revision
 » type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -933,14 +937,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/organizations/{org_db}/services \
+curl -X GET //organizations/{org_db}/services \
   -H 'Accept: text/html'
 
 ```
 
 ```http
-GET http://localhost:33301/organizations/{org_db}/services HTTP/1.1
-Host: localhost:33301
+GET //organizations/{org_db}/services HTTP/1.1
+Host: null
 
 Accept: text/html
 
@@ -953,7 +957,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/organizations/{org_db}/services',
+  url: '//organizations/{org_db}/services',
   method: 'get',
 
   headers: headers,
@@ -971,7 +975,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/organizations/{org_db}/services',
+fetch('//organizations/{org_db}/services',
 {
   method: 'GET',
 
@@ -992,7 +996,7 @@ headers = {
   'Accept' => 'text/html'
 }
 
-result = RestClient.get 'http://localhost:33301/organizations/{org_db}/services',
+result = RestClient.get '//organizations/{org_db}/services',
   params: {
   }, headers: headers
 
@@ -1005,7 +1009,7 @@ headers = {
   'Accept': 'text/html'
 }
 
-r = requests.get('http://localhost:33301/organizations/{org_db}/services', params={
+r = requests.get('//organizations/{org_db}/services', params={
 
 }, headers = headers)
 
@@ -1013,7 +1017,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/organizations/{org_db}/services");
+URL obj = new URL("//organizations/{org_db}/services");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1053,12 +1057,14 @@ org_db|path|string|true|Organization database name
       "service_price": 0,
       "service_currency_code": "string"
     },
+    "is_available_on_portal": true,
+    "is_default": true,
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-14T23:52:40Z",
-    "time_update": "2017-11-14T23:52:40Z",
-    "time_delete": "2017-11-14T23:52:40Z",
+    "time_create": "2017-11-27T23:27:40Z",
+    "time_update": "2017-11-27T23:27:40Z",
+    "time_delete": "2017-11-27T23:27:40Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -1091,6 +1097,8 @@ anonymous|[object]|false|No description
 »» service_ind_free|number(double)|false|Indicator if appointment is free of charge (1: true, 0: false)
 »» service_price|number(double)|false|Service price to be payed
 »» service_currency_code|string|false|Service price currency code
+» is_available_on_portal|boolean|false|If available on portal
+» is_default|boolean|false|If this is default service
 » _id|string|false|Database record identifier
 » _rev|string|false|Database record revision
 » type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -1126,14 +1134,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X POST http://localhost:33301/register?name=string&pass=string&email_primary=string&email_secondary=string \
+curl -X POST //register?name=string&pass=string&email_primary=string&email_secondary=string \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-POST http://localhost:33301/register?name=string&pass=string&email_primary=string&email_secondary=string HTTP/1.1
-Host: localhost:33301
+POST //register?name=string&pass=string&email_primary=string&email_secondary=string HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -1146,7 +1154,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/register',
+  url: '//register',
   method: 'post',
   data: '?name=string&pass=string&email_primary=string&email_secondary=string',
   headers: headers,
@@ -1164,7 +1172,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/register?name=string&pass=string&email_primary=string&email_secondary=string',
+fetch('//register?name=string&pass=string&email_primary=string&email_secondary=string',
 {
   method: 'POST',
 
@@ -1185,7 +1193,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.post 'http://localhost:33301/register',
+result = RestClient.post '//register',
   params: {
   'name' => 'string',
 'pass' => 'string',
@@ -1202,7 +1210,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.post('http://localhost:33301/register', params={
+r = requests.post('//register', params={
   'name': 'string',  'pass': 'string',  'email_primary': 'string',  'email_secondary': 'string'
 }, headers = headers)
 
@@ -1210,7 +1218,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/register?name=string&pass=string&email_primary=string&email_secondary=string");
+URL obj = new URL("//register?name=string&pass=string&email_primary=string&email_secondary=string");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -1260,14 +1268,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/stats/org_count \
+curl -X GET //stats/org_count \
   -H 'Accept: text/html'
 
 ```
 
 ```http
-GET http://localhost:33301/stats/org_count HTTP/1.1
-Host: localhost:33301
+GET //stats/org_count HTTP/1.1
+Host: null
 
 Accept: text/html
 
@@ -1280,7 +1288,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/stats/org_count',
+  url: '//stats/org_count',
   method: 'get',
 
   headers: headers,
@@ -1298,7 +1306,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/stats/org_count',
+fetch('//stats/org_count',
 {
   method: 'GET',
 
@@ -1319,7 +1327,7 @@ headers = {
   'Accept' => 'text/html'
 }
 
-result = RestClient.get 'http://localhost:33301/stats/org_count',
+result = RestClient.get '//stats/org_count',
   params: {
   }, headers: headers
 
@@ -1332,7 +1340,7 @@ headers = {
   'Accept': 'text/html'
 }
 
-r = requests.get('http://localhost:33301/stats/org_count', params={
+r = requests.get('//stats/org_count', params={
 
 }, headers = headers)
 
@@ -1340,7 +1348,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/stats/org_count");
+URL obj = new URL("//stats/org_count");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1380,14 +1388,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/client \
+curl -X GET //_/client \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/client HTTP/1.1
-Host: localhost:33301
+GET //_/client HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -1400,7 +1408,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/client',
+  url: '//_/client',
   method: 'get',
 
   headers: headers,
@@ -1418,7 +1426,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/client',
+fetch('//_/client',
 {
   method: 'GET',
 
@@ -1439,7 +1447,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/client',
+result = RestClient.get '//_/client',
   params: {
   }, headers: headers
 
@@ -1452,7 +1460,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/client', params={
+r = requests.get('//_/client', params={
 
 }, headers = headers)
 
@@ -1460,7 +1468,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/client");
+URL obj = new URL("//_/client");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1488,9 +1496,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -1536,14 +1544,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/device \
+curl -X GET //_/device \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/device HTTP/1.1
-Host: localhost:33301
+GET //_/device HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -1556,7 +1564,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/device',
+  url: '//_/device',
   method: 'get',
 
   headers: headers,
@@ -1574,7 +1582,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/device',
+fetch('//_/device',
 {
   method: 'GET',
 
@@ -1595,7 +1603,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/device',
+result = RestClient.get '//_/device',
   params: {
   }, headers: headers
 
@@ -1608,7 +1616,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/device', params={
+r = requests.get('//_/device', params={
 
 }, headers = headers)
 
@@ -1616,7 +1624,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/device");
+URL obj = new URL("//_/device");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1670,9 +1678,9 @@ System.out.println(response.toString());
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-14T23:52:40Z",
-    "time_update": "2017-11-14T23:52:40Z",
-    "time_delete": "2017-11-14T23:52:40Z",
+    "time_create": "2017-11-27T23:27:40Z",
+    "time_update": "2017-11-27T23:27:40Z",
+    "time_delete": "2017-11-27T23:27:40Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -1681,9 +1689,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -1765,14 +1773,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/licence \
+curl -X GET //_/licence \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/licence HTTP/1.1
-Host: localhost:33301
+GET //_/licence HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -1785,7 +1793,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/licence',
+  url: '//_/licence',
   method: 'get',
 
   headers: headers,
@@ -1803,7 +1811,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/licence',
+fetch('//_/licence',
 {
   method: 'GET',
 
@@ -1824,7 +1832,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/licence',
+result = RestClient.get '//_/licence',
   params: {
   }, headers: headers
 
@@ -1837,7 +1845,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/licence', params={
+r = requests.get('//_/licence', params={
 
 }, headers = headers)
 
@@ -1845,7 +1853,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/licence");
+URL obj = new URL("//_/licence");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1866,17 +1874,17 @@ System.out.println(response.toString());
 
 ```json
 {
-  "date_expiration": "2017-11-14T23:52:40Z",
-  "date_start": "2017-11-14T23:52:40Z",
+  "date_expiration": "2017-11-27T23:27:40Z",
+  "date_start": "2017-11-27T23:27:40Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -1923,14 +1931,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/messageTemplate \
+curl -X GET //_/messageTemplate \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/messageTemplate HTTP/1.1
-Host: localhost:33301
+GET //_/messageTemplate HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -1943,7 +1951,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/messageTemplate',
+  url: '//_/messageTemplate',
   method: 'get',
 
   headers: headers,
@@ -1961,7 +1969,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/messageTemplate',
+fetch('//_/messageTemplate',
 {
   method: 'GET',
 
@@ -1982,7 +1990,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/messageTemplate',
+result = RestClient.get '//_/messageTemplate',
   params: {
   }, headers: headers
 
@@ -1995,7 +2003,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/messageTemplate', params={
+r = requests.get('//_/messageTemplate', params={
 
 }, headers = headers)
 
@@ -2003,7 +2011,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/messageTemplate");
+URL obj = new URL("//_/messageTemplate");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -2030,9 +2038,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2077,14 +2085,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/org \
+curl -X GET //_/org \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/org HTTP/1.1
-Host: localhost:33301
+GET //_/org HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -2097,7 +2105,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/org',
+  url: '//_/org',
   method: 'get',
 
   headers: headers,
@@ -2115,7 +2123,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/org',
+fetch('//_/org',
 {
   method: 'GET',
 
@@ -2136,7 +2144,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/org',
+result = RestClient.get '//_/org',
   params: {
   }, headers: headers
 
@@ -2149,7 +2157,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/org', params={
+r = requests.get('//_/org', params={
 
 }, headers = headers)
 
@@ -2157,7 +2165,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/org");
+URL obj = new URL("//_/org");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -2187,9 +2195,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2237,14 +2245,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/orgTermin3 \
+curl -X GET //_/orgTermin3 \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/orgTermin3 HTTP/1.1
-Host: localhost:33301
+GET //_/orgTermin3 HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -2257,7 +2265,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/orgTermin3',
+  url: '//_/orgTermin3',
   method: 'get',
 
   headers: headers,
@@ -2275,7 +2283,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/orgTermin3',
+fetch('//_/orgTermin3',
 {
   method: 'GET',
 
@@ -2296,7 +2304,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/orgTermin3',
+result = RestClient.get '//_/orgTermin3',
   params: {
   }, headers: headers
 
@@ -2309,7 +2317,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/orgTermin3', params={
+r = requests.get('//_/orgTermin3', params={
 
 }, headers = headers)
 
@@ -2317,7 +2325,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/orgTermin3");
+URL obj = new URL("//_/orgTermin3");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -2358,12 +2366,12 @@ System.out.println(response.toString());
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-      "global": "2017-11-14T23:52:40Z"
+      "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+      "global": "2017-11-27T23:27:40Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-      "global": "2017-11-14T23:52:40Z"
+      "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+      "global": "2017-11-27T23:27:40Z"
     },
     "staff": {
       "admin": {
@@ -2378,24 +2386,25 @@ System.out.println(response.toString());
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-11-14T23:52:40Z",
+    "last_run": "2017-11-27T23:27:40Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-11-14T23:52:40Z",
+    "termin_last_date": "2017-11-27T23:27:40Z",
     "termins_in_future": 0
   },
   "portal": {
     "domain_name": "string",
     "org_db": "string",
-    "time_created": "2017-11-14T23:52:40Z",
+    "time_created": "2017-11-27T23:27:40Z",
     "is_available": true,
     "is_public": true,
+    "days_ahead": 0,
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-14T23:52:40Z",
-    "time_update": "2017-11-14T23:52:40Z",
-    "time_delete": "2017-11-14T23:52:40Z",
+    "time_create": "2017-11-27T23:27:40Z",
+    "time_update": "2017-11-27T23:27:40Z",
+    "time_delete": "2017-11-27T23:27:40Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -2404,9 +2413,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2467,6 +2476,7 @@ portal|object|false|Portal info
 » time_created|string(date-time)|false|Date and time when domain was created
 » is_available|boolean|false|Is domain available. If not then it is already reserved by someone else.
 » is_public|boolean|false|Is domain public, meaning if reserved domain has been publicly released.
+» days_ahead|number(double)|false|Days ahead shown on portal
 » _id|string|false|Database record identifier
 » _rev|string|false|Database record revision
 » type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -2500,14 +2510,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/recurringMeta \
+curl -X GET //_/recurringMeta \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/recurringMeta HTTP/1.1
-Host: localhost:33301
+GET //_/recurringMeta HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -2520,7 +2530,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/recurringMeta',
+  url: '//_/recurringMeta',
   method: 'get',
 
   headers: headers,
@@ -2538,7 +2548,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/recurringMeta',
+fetch('//_/recurringMeta',
 {
   method: 'GET',
 
@@ -2559,7 +2569,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/recurringMeta',
+result = RestClient.get '//_/recurringMeta',
   params: {
   }, headers: headers
 
@@ -2572,7 +2582,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/recurringMeta', params={
+r = requests.get('//_/recurringMeta', params={
 
 }, headers = headers)
 
@@ -2580,7 +2590,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/recurringMeta");
+URL obj = new URL("//_/recurringMeta");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -2602,21 +2612,21 @@ System.out.println(response.toString());
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-11-14T23:52:40Z",
-  "end_date": "2017-11-14T23:52:40Z",
+  "start_date": "2017-11-27T23:27:40Z",
+  "end_date": "2017-11-27T23:27:40Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-11-14T23:52:40Z",
+  "cached_until": "2017-11-27T23:27:40Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2668,14 +2678,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/reminder \
+curl -X GET //_/reminder \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/reminder HTTP/1.1
-Host: localhost:33301
+GET //_/reminder HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -2688,7 +2698,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/reminder',
+  url: '//_/reminder',
   method: 'get',
 
   headers: headers,
@@ -2706,7 +2716,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/reminder',
+fetch('//_/reminder',
 {
   method: 'GET',
 
@@ -2727,7 +2737,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/reminder',
+result = RestClient.get '//_/reminder',
   params: {
   }, headers: headers
 
@@ -2740,7 +2750,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/reminder', params={
+r = requests.get('//_/reminder', params={
 
 }, headers = headers)
 
@@ -2748,7 +2758,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/reminder");
+URL obj = new URL("//_/reminder");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -2779,18 +2789,18 @@ System.out.println(response.toString());
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-11-14T23:52:40Z",
-  "recurring_termin_next_date": "2017-11-14T23:52:40Z",
+  "id_recurring_date": "2017-11-27T23:27:40Z",
+  "recurring_termin_next_date": "2017-11-27T23:27:40Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-11-14T23:52:40Z",
+  "scheduled_time": "2017-11-27T23:27:40Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-11-14T23:52:40Z",
-  "snap_termin_end_time": "2017-11-14T23:52:40Z",
+  "snap_termin_time": "2017-11-27T23:27:40Z",
+  "snap_termin_end_time": "2017-11-27T23:27:40Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -2799,9 +2809,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2870,14 +2880,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/service \
+curl -X GET //_/service \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/service HTTP/1.1
-Host: localhost:33301
+GET //_/service HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -2890,7 +2900,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/service',
+  url: '//_/service',
   method: 'get',
 
   headers: headers,
@@ -2908,7 +2918,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/service',
+fetch('//_/service',
 {
   method: 'GET',
 
@@ -2929,7 +2939,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/service',
+result = RestClient.get '//_/service',
   params: {
   }, headers: headers
 
@@ -2942,7 +2952,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/service', params={
+r = requests.get('//_/service', params={
 
 }, headers = headers)
 
@@ -2950,7 +2960,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/service");
+URL obj = new URL("//_/service");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -2980,12 +2990,14 @@ System.out.println(response.toString());
     "service_price": 0,
     "service_currency_code": "string"
   },
+  "is_available_on_portal": true,
+  "is_default": true,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3012,6 +3024,8 @@ payment_info|object|false|Payment info
 » service_ind_free|number(double)|false|Indicator if appointment is free of charge (1: true, 0: false)
 » service_price|number(double)|false|Service price to be payed
 » service_currency_code|string|false|Service price currency code
+is_available_on_portal|boolean|false|If available on portal
+is_default|boolean|false|If this is default service
 _id|string|false|Database record identifier
 _rev|string|false|Database record revision
 type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -3035,14 +3049,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/settings \
+curl -X GET //_/settings \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/settings HTTP/1.1
-Host: localhost:33301
+GET //_/settings HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -3055,7 +3069,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/settings',
+  url: '//_/settings',
   method: 'get',
 
   headers: headers,
@@ -3073,7 +3087,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/settings',
+fetch('//_/settings',
 {
   method: 'GET',
 
@@ -3094,7 +3108,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/settings',
+result = RestClient.get '//_/settings',
   params: {
   }, headers: headers
 
@@ -3107,7 +3121,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/settings', params={
+r = requests.get('//_/settings', params={
 
 }, headers = headers)
 
@@ -3115,7 +3129,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/settings");
+URL obj = new URL("//_/settings");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -3150,9 +3164,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3205,14 +3219,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/staff \
+curl -X GET //_/staff \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/staff HTTP/1.1
-Host: localhost:33301
+GET //_/staff HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -3225,7 +3239,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/staff',
+  url: '//_/staff',
   method: 'get',
 
   headers: headers,
@@ -3243,7 +3257,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/staff',
+fetch('//_/staff',
 {
   method: 'GET',
 
@@ -3264,7 +3278,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/staff',
+result = RestClient.get '//_/staff',
   params: {
   }, headers: headers
 
@@ -3277,7 +3291,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/staff', params={
+r = requests.get('//_/staff', params={
 
 }, headers = headers)
 
@@ -3285,7 +3299,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/staff");
+URL obj = new URL("//_/staff");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -3311,20 +3325,21 @@ System.out.println(response.toString());
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-11-14T23:52:40Z",
+      "time_create": "2017-11-27T23:27:40Z",
       "dates": [
-        "2017-11-14T23:52:40Z"
+        "2017-11-27T23:27:40Z"
       ],
       "description": "string",
       "freq": "once"
     }
   ],
+  "is_available_on_portal": true,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3346,6 +3361,7 @@ Name|Type|Required|Description
 db_user|string|false|Staff is a user that has it's own database. This is that database name
 id_user|string|false|User ID
 role_in_org|string|false|Role in organization (not used yet)
+is_available_on_portal|boolean|false|If available on portal
 _id|string|false|Database record identifier
 _rev|string|false|Database record revision
 type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -3374,14 +3390,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/termin \
+curl -X GET //_/termin \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/termin HTTP/1.1
-Host: localhost:33301
+GET //_/termin HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -3394,7 +3410,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/termin',
+  url: '//_/termin',
   method: 'get',
 
   headers: headers,
@@ -3412,7 +3428,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/termin',
+fetch('//_/termin',
 {
   method: 'GET',
 
@@ -3433,7 +3449,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/termin',
+result = RestClient.get '//_/termin',
   params: {
   }, headers: headers
 
@@ -3446,7 +3462,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/termin', params={
+r = requests.get('//_/termin', params={
 
 }, headers = headers)
 
@@ -3454,7 +3470,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/termin");
+URL obj = new URL("//_/termin");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -3476,9 +3492,9 @@ System.out.println(response.toString());
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-11-14T23:52:40Z",
-  "time_end": "2017-11-14T23:52:40Z",
-  "sms_reminder": "2017-11-14T23:52:40Z",
+  "time_start": "2017-11-27T23:27:40Z",
+  "time_end": "2017-11-27T23:27:40Z",
+  "sms_reminder": "2017-11-27T23:27:40Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -3491,9 +3507,9 @@ System.out.println(response.toString());
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-11-14T23:52:40Z",
+  "recurring_exception_date": "2017-11-27T23:27:40Z",
   "recurring_dates": [
-    "2017-11-14T23:52:40Z"
+    "2017-11-27T23:27:40Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -3512,9 +3528,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3583,14 +3599,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/user \
+curl -X GET //_/user \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/user HTTP/1.1
-Host: localhost:33301
+GET //_/user HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -3603,7 +3619,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/user',
+  url: '//_/user',
   method: 'get',
 
   headers: headers,
@@ -3621,7 +3637,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/user',
+fetch('//_/user',
 {
   method: 'GET',
 
@@ -3642,7 +3658,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/user',
+result = RestClient.get '//_/user',
   params: {
   }, headers: headers
 
@@ -3655,7 +3671,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/user', params={
+r = requests.get('//_/user', params={
 
 }, headers = headers)
 
@@ -3663,7 +3679,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/user");
+URL obj = new URL("//_/user");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -3694,22 +3710,22 @@ System.out.println(response.toString());
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-11-14T23:52:40Z",
+    "last_active_time": "2017-11-27T23:27:40Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-11-14T23:52:40Z",
+    "review_asked_time": "2017-11-27T23:27:40Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3770,14 +3786,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET http://localhost:33301/_/userTermin3 \
+curl -X GET //_/userTermin3 \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET http://localhost:33301/_/userTermin3 HTTP/1.1
-Host: localhost:33301
+GET //_/userTermin3 HTTP/1.1
+Host: null
 
 Accept: application/json
 
@@ -3790,7 +3806,7 @@ var headers = {
 };
 
 $.ajax({
-  url: 'http://localhost:33301/_/userTermin3',
+  url: '//_/userTermin3',
   method: 'get',
 
   headers: headers,
@@ -3808,7 +3824,7 @@ const headers = {
 
 };
 
-fetch('http://localhost:33301/_/userTermin3',
+fetch('//_/userTermin3',
 {
   method: 'GET',
 
@@ -3829,7 +3845,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'http://localhost:33301/_/userTermin3',
+result = RestClient.get '//_/userTermin3',
   params: {
   }, headers: headers
 
@@ -3842,7 +3858,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('http://localhost:33301/_/userTermin3', params={
+r = requests.get('//_/userTermin3', params={
 
 }, headers = headers)
 
@@ -3850,7 +3866,7 @@ print r.json()
 ```
 
 ```java
-URL obj = new URL("http://localhost:33301/_/userTermin3");
+URL obj = new URL("//_/userTermin3");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -3879,13 +3895,13 @@ System.out.println(response.toString());
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": "string",
-  "email_primary_sent_time": "2017-11-14T23:52:40Z",
+  "email_primary_sent_time": "2017-11-27T23:27:40Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3939,9 +3955,9 @@ This operation does not require authentication
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-11-14T23:52:40Z",
-  "time_end": "2017-11-14T23:52:40Z",
-  "sms_reminder": "2017-11-14T23:52:40Z",
+  "time_start": "2017-11-27T23:27:40Z",
+  "time_end": "2017-11-27T23:27:40Z",
+  "sms_reminder": "2017-11-27T23:27:40Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -3954,9 +3970,9 @@ This operation does not require authentication
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-11-14T23:52:40Z",
+  "recurring_exception_date": "2017-11-27T23:27:40Z",
   "recurring_dates": [
-    "2017-11-14T23:52:40Z"
+    "2017-11-27T23:27:40Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -3975,9 +3991,9 @@ This operation does not require authentication
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4096,15 +4112,16 @@ rev|string|true|New document revision MVCC token
 {
   "domain_name": "string",
   "org_db": "string",
-  "time_created": "2017-11-14T23:52:40Z",
+  "time_created": "2017-11-27T23:27:40Z",
   "is_available": true,
   "is_public": true,
+  "days_ahead": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4121,6 +4138,7 @@ org_db|string|true|Organization database name
 time_created|string(date-time)|false|Date and time when domain was created
 is_available|boolean|true|Is domain available. If not then it is already reserved by someone else.
 is_public|boolean|true|Is domain public, meaning if reserved domain has been publicly released.
+days_ahead|number(double)|true|Days ahead shown on portal
 _id|string|true|Database record identifier
 _rev|string|true|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -4168,12 +4186,12 @@ type|message_template|
     "ok": true
   },
   "doc_created_min": {
-    "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-    "global": "2017-11-14T23:52:40Z"
+    "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+    "global": "2017-11-27T23:27:40Z"
   },
   "doc_created_max": {
-    "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-    "global": "2017-11-14T23:52:40Z"
+    "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+    "global": "2017-11-27T23:27:40Z"
   },
   "staff": {
     "admin": {
@@ -4188,10 +4206,10 @@ type|message_template|
       "ReminderDbModelErrorCodes": 0
     }
   },
-  "last_run": "2017-11-14T23:52:40Z",
+  "last_run": "2017-11-27T23:27:40Z",
   "termin3_code": "string",
   "termin3_version": "string",
-  "termin_last_date": "2017-11-14T23:52:40Z",
+  "termin_last_date": "2017-11-27T23:27:40Z",
   "termins_in_future": 0
 } 
 ```
@@ -4257,12 +4275,12 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-      "global": "2017-11-14T23:52:40Z"
+      "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+      "global": "2017-11-27T23:27:40Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-11-14T23:52:40Z",
-      "global": "2017-11-14T23:52:40Z"
+      "CommonDbModelDocumentType": "2017-11-27T23:27:40Z",
+      "global": "2017-11-27T23:27:40Z"
     },
     "staff": {
       "admin": {
@@ -4277,24 +4295,25 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-11-14T23:52:40Z",
+    "last_run": "2017-11-27T23:27:40Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-11-14T23:52:40Z",
+    "termin_last_date": "2017-11-27T23:27:40Z",
     "termins_in_future": 0
   },
   "portal": {
     "domain_name": "string",
     "org_db": "string",
-    "time_created": "2017-11-14T23:52:40Z",
+    "time_created": "2017-11-27T23:27:40Z",
     "is_available": true,
     "is_public": true,
+    "days_ahead": 0,
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-14T23:52:40Z",
-    "time_update": "2017-11-14T23:52:40Z",
-    "time_delete": "2017-11-14T23:52:40Z",
+    "time_create": "2017-11-27T23:27:40Z",
+    "time_update": "2017-11-27T23:27:40Z",
+    "time_delete": "2017-11-27T23:27:40Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -4303,9 +4322,9 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4359,6 +4378,7 @@ portal|object|true|Portal info
 » time_created|string(date-time)|false|Date and time when domain was created
 » is_available|boolean|false|Is domain available. If not then it is already reserved by someone else.
 » is_public|boolean|false|Is domain public, meaning if reserved domain has been publicly released.
+» days_ahead|number(double)|false|Days ahead shown on portal
 » _id|string|false|Database record identifier
 » _rev|string|false|Database record revision
 » type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -4424,12 +4444,14 @@ type|message_template|
     "service_price": 0,
     "service_currency_code": "string"
   },
+  "is_available_on_portal": true,
+  "is_default": true,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4449,6 +4471,8 @@ payment_info|object|true|Payment info
 » service_ind_free|number(double)|false|Indicator if appointment is free of charge (1: true, 0: false)
 » service_price|number(double)|false|Service price to be payed
 » service_currency_code|string|false|Service price currency code
+is_available_on_portal|boolean|false|If available on portal
+is_default|boolean|false|If this is default service
 _id|string|true|Database record identifier
 _rev|string|true|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -4491,9 +4515,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4560,9 +4584,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4661,9 +4685,9 @@ type|message_template|
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-14T23:52:40Z",
-    "time_update": "2017-11-14T23:52:40Z",
-    "time_delete": "2017-11-14T23:52:40Z",
+    "time_create": "2017-11-27T23:27:40Z",
+    "time_update": "2017-11-27T23:27:40Z",
+    "time_delete": "2017-11-27T23:27:40Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -4672,9 +4696,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4780,17 +4804,17 @@ type|message_template|
 
 ```json
 {
-  "date_expiration": "2017-11-14T23:52:40Z",
-  "date_start": "2017-11-14T23:52:40Z",
+  "date_expiration": "2017-11-27T23:27:40Z",
+  "date_start": "2017-11-27T23:27:40Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4848,9 +4872,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4909,9 +4933,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4965,21 +4989,21 @@ type|message_template|
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-11-14T23:52:40Z",
-  "end_date": "2017-11-14T23:52:40Z",
+  "start_date": "2017-11-27T23:27:40Z",
+  "end_date": "2017-11-27T23:27:40Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-11-14T23:52:40Z",
+  "cached_until": "2017-11-27T23:27:40Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5055,18 +5079,18 @@ type|message_template|
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-11-14T23:52:40Z",
-  "recurring_termin_next_date": "2017-11-14T23:52:40Z",
+  "id_recurring_date": "2017-11-27T23:27:40Z",
+  "recurring_termin_next_date": "2017-11-27T23:27:40Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-11-14T23:52:40Z",
+  "scheduled_time": "2017-11-27T23:27:40Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-11-14T23:52:40Z",
-  "snap_termin_end_time": "2017-11-14T23:52:40Z",
+  "snap_termin_time": "2017-11-27T23:27:40Z",
+  "snap_termin_end_time": "2017-11-27T23:27:40Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -5075,9 +5099,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5187,20 +5211,21 @@ type|message_template|
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-11-14T23:52:40Z",
+      "time_create": "2017-11-27T23:27:40Z",
       "dates": [
-        "2017-11-14T23:52:40Z"
+        "2017-11-27T23:27:40Z"
       ],
       "description": "string",
       "freq": "once"
     }
   ],
+  "is_available_on_portal": true,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5215,6 +5240,7 @@ Name|Type|Required|Description
 db_user|string|true|Staff is a user that has it's own database. This is that database name
 id_user|string|true|User ID
 role_in_org|string|true|Role in organization (not used yet)
+is_available_on_portal|boolean|false|If available on portal
 _id|string|true|Database record identifier
 _rev|string|true|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -5267,22 +5293,22 @@ type|message_template|
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-11-14T23:52:40Z",
+    "last_active_time": "2017-11-27T23:27:40Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-11-14T23:52:40Z",
+    "review_asked_time": "2017-11-27T23:27:40Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5356,13 +5382,13 @@ type|message_template|
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": "string",
-  "email_primary_sent_time": "2017-11-14T23:52:40Z",
+  "email_primary_sent_time": "2017-11-27T23:27:40Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-14T23:52:40Z",
-  "time_update": "2017-11-14T23:52:40Z",
-  "time_delete": "2017-11-14T23:52:40Z",
+  "time_create": "2017-11-27T23:27:40Z",
+  "time_update": "2017-11-27T23:27:40Z",
+  "time_delete": "2017-11-27T23:27:40Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
