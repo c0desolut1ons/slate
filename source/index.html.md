@@ -161,9 +161,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
 [
   {
     "status": "step_1",
-    "time_start": "2017-11-28T15:27:45Z",
-    "time_end": "2017-11-28T15:27:45Z",
-    "sms_reminder": "2017-11-28T15:27:45Z",
+    "time_start": "2017-12-01T23:15:08Z",
+    "time_end": "2017-12-01T23:15:08Z",
+    "sms_reminder": "2017-12-01T23:15:08Z",
     "note": "string",
     "id_client": "string",
     "id_service": "string",
@@ -176,9 +176,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "id_recurring_meta": "string",
     "freq": "once",
     "recurring_state": "no_recurring",
-    "recurring_exception_date": "2017-11-28T15:27:45Z",
+    "recurring_exception_date": "2017-12-01T23:15:08Z",
     "recurring_dates": [
-      "2017-11-28T15:27:45Z"
+      "2017-12-01T23:15:08Z"
     ],
     "booking_info": {
       "client_name": "string",
@@ -197,9 +197,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-28T15:27:45Z",
-    "time_update": "2017-11-28T15:27:45Z",
-    "time_delete": "2017-11-28T15:27:45Z",
+    "time_create": "2017-12-01T23:15:08Z",
+    "time_update": "2017-12-01T23:15:08Z",
+    "time_delete": "2017-12-01T23:15:08Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -574,7 +574,7 @@ name|path|string|true|
 {
   "domain_name": "string",
   "org_db": "string",
-  "time_created": "2017-11-28T15:27:45Z",
+  "time_created": "2017-12-01T23:15:08Z",
   "is_available": true,
   "is_public": true,
   "days_ahead": 0
@@ -935,9 +935,9 @@ org_db|path|string|true|Organization database name
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -980,274 +980,6 @@ db_origin|string|false|Name of organization database where document was original
 
 
 <h3 id="OrganizationApiRead-responseschema">Response Schema</h3>
-
-Status Code **500**
-
-Name|Type|Required|Description
----|---|---|---|---|
-simple|string|false|No description
-
-
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-## Termin3ApiOrgDbRead
-
-> Code samples
-
-```shell
-# You can also use wget
-curl -X GET //termin3/organizations/{org_db} \
-  -H 'Accept: text/html'
-
-```
-
-```http
-GET //termin3/organizations/{org_db} HTTP/1.1
-Host: null
-
-Accept: text/html
-
-```
-
-```javascript
-var headers = {
-  'Accept':'text/html'
-
-};
-
-$.ajax({
-  url: '//termin3/organizations/{org_db}',
-  method: 'get',
-
-  headers: headers,
-  success: function(data) {
-    console.log(JSON.stringify(data));
-  }
-})
-```
-
-```javascript--nodejs
-const request = require('node-fetch');
-
-const headers = {
-  'Accept':'text/html'
-
-};
-
-fetch('//termin3/organizations/{org_db}',
-{
-  method: 'GET',
-
-  headers: headers
-})
-.then(function(res) {
-    return res.json();
-}).then(function(body) {
-    console.log(body);
-});
-```
-
-```ruby
-require 'rest-client'
-require 'json'
-
-headers = {
-  'Accept' => 'text/html'
-}
-
-result = RestClient.get '//termin3/organizations/{org_db}',
-  params: {
-  }, headers: headers
-
-p JSON.parse(result)
-```
-
-```python
-import requests
-headers = {
-  'Accept': 'text/html'
-}
-
-r = requests.get('//termin3/organizations/{org_db}', params={
-
-}, headers = headers)
-
-print r.json()
-```
-
-```java
-URL obj = new URL("//termin3/organizations/{org_db}");
-HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-con.setRequestMethod("GET");
-int responseCode = con.getResponseCode();
-BufferedReader in = new BufferedReader(
-    new InputStreamReader(con.getInputStream()));
-String inputLine;
-StringBuffer response = new StringBuffer();
-while ((inputLine = in.readLine()) != null) {
-    response.append(inputLine);
-}
-in.close();
-System.out.println(response.toString());
-```
-
-`GET /termin3/organizations/{org_db}`
-
-Fetching organization data from termin3 database. This is not the same as from org database.
-
-<h3 id="Termin3ApiOrgDbRead-parameters">Parameters</h3>
-
-Parameter|In|Type|Required|Description
----|---|---|---|---|
-org_db|path|string|true|Organization database name
-
-
-> Example responses
-
-```json
-{
-  "db_org": "string",
-  "id_org": "string",
-  "db_owner_initial": "string",
-  "name_initial": "string",
-  "business_initial": "string",
-  "working_hours_from_initial": "string",
-  "working_hours_to_initial": "string",
-  "stats": {
-    "doc_count": {
-      "CommonDbModelDocumentType": 0,
-      "by_day": {
-        "CommonDbModelDocumentType": {
-          "Date": 0
-        }
-      },
-      "total": 0,
-      "processed": 0,
-      "ok": true
-    },
-    "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-      "global": "2017-11-28T15:27:45Z"
-    },
-    "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-      "global": "2017-11-28T15:27:45Z"
-    },
-    "staff": {
-      "admin": {
-        "db": "string",
-        "email": "string",
-        "name": "string"
-      }
-    },
-    "reminder": {
-      "ReminderDbModelStatusCodes": 0,
-      "fail_reason": {
-        "ReminderDbModelErrorCodes": 0
-      }
-    },
-    "last_run": "2017-11-28T15:27:45Z",
-    "termin3_code": "string",
-    "termin3_version": "string",
-    "termin_last_date": "2017-11-28T15:27:45Z",
-    "termins_in_future": 0
-  },
-  "portal": {
-    "domain_name": "string",
-    "org_db": "string",
-    "time_created": "2017-11-28T15:27:45Z",
-    "is_available": true,
-    "is_public": true,
-    "days_ahead": 0
-  },
-  "_id": "string",
-  "_rev": "string",
-  "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
-  "user_create": "string",
-  "user_update": "string",
-  "user_delete": "string",
-  "db_origin": "string"
-}
-```
-```json
-"string"
-```
-<h3 id="Termin3ApiOrgDbRead-responses">Responses</h3>
-
-Status|Meaning|Description|Schema
----|---|---|---|
-200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|Inline
-500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|string
-
-<h3 id="Termin3ApiOrgDbRead-responseschema">Response Schema</h3>
-
-Status Code **200**
-
-Name|Type|Required|Description
----|---|---|---|---|
-db_org|string|false|Organization database name
-id_org|string|false|Original org document ID that exists in db_org database
-db_owner_initial|string|false|User database name (at time of org document creation)
-name_initial|string|false|Organization name (at time of org document creation)
-business_initial|string|false|Business category (at time of org document creation)
-working_hours_from_initial|string|false|Working hours starting time (at time of org document creation). Example: 08:00
-working_hours_to_initial|string|false|Working hours ending time (at time of org document creation). Example: 23:00
-stats|object|false|BI statistics for organization
-» doc_count|object|false|No description
-»» CommonDbModelDocumentType|number(double)|false|Number of documents for each document type
-»» by_day|object|false|Number of documents by document type grouped by dates when they were created
-»»» CommonDbModelDocumentType|object|false|No description
-»»»» Date|number(double)|false|No description
-»» total|number(double)|false|Total number of documents processed by BI for this organization
-»» processed|number(double)|false|Current number of processed documents by BI
-»» ok|boolean|false|BI counting has finished
-» doc_created_min|object|false|Minimum date and time of document creation by document type
-»» CommonDbModelDocumentType|string(date-time)|false|No description
-»» global|string(date-time)|false|Date and time of first document creation
-» doc_created_max|object|false|Maximum date and time of document creation by document type
-»» CommonDbModelDocumentType|string(date-time)|false|No description
-»» global|string(date-time)|false|Date and time of last document creation
-» staff|object|false|Staff stats
-»» admin|object|false|No description
-»»» db|string|false|Staff user db
-»»» email|string|false|Staff username as email
-»»» name|string|false|Staff name
-» reminder|object|false|Reminder stats
-»» ReminderDbModelStatusCodes|number(double)|false|Number of reminders with particular status
-»» fail_reason|object|false|Number of reminders by fail reasons
-»»» ReminderDbModelErrorCodes|number(double)|false|No description
-» last_run|string(date-time)|false|Date and time when BI was run last
-» termin3_code|string|false|Latest used Termin3 Android application code
-» termin3_version|string|false|Latest used Termin3 Android application version
-» termin_last_date|string(date-time)|false|Date when starts the last appointment in organization database
-» termins_in_future|number(double)|false|Number of appointments scheduled in future
-portal|object|false|Portal info
-» domain_name|string|false|Domain name
-» org_db|string|false|Organization database name
-» time_created|string(date-time)|false|Date and time when domain was created
-» is_available|boolean|false|Is domain available. If not then it is already reserved by someone else.
-» is_public|boolean|false|Is domain public, meaning if reserved domain has been publicly released.
-» days_ahead|number(double)|false|Days ahead shown on portal
-_id|string|false|Database record identifier
-_rev|string|false|Database record revision
-type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
-time_create|string(date-time)|false|Date and time when record was created
-time_update|string(date-time)|false|Date and time when record was updated
-time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|false|User ID who created record.
-user_update|string|false|User ID who updated record.
-user_delete|string|false|User ID who deleted record.
-db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
-
-
-
-<h3 id="Termin3ApiOrgDbRead-responseschema">Response Schema</h3>
 
 Status Code **500**
 
@@ -1389,14 +1121,14 @@ org_db|path|string|true|Organization database name
       "service_price": 0,
       "service_currency_code": "string"
     },
-    "is_available_on_portal": true,
+    "is_public": true,
     "is_default": true,
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-28T15:27:45Z",
-    "time_update": "2017-11-28T15:27:45Z",
-    "time_delete": "2017-11-28T15:27:45Z",
+    "time_create": "2017-12-01T23:15:08Z",
+    "time_update": "2017-12-01T23:15:08Z",
+    "time_delete": "2017-12-01T23:15:08Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -1429,8 +1161,8 @@ anonymous|[object]|false|No description
 »» service_ind_free|number(double)|false|Indicator if appointment is free of charge (1: true, 0: false)
 »» service_price|number(double)|false|Service price to be payed
 »» service_currency_code|string|false|Service price currency code
-» is_available_on_portal|boolean|false|If available on portal
-» is_default|boolean|false|If this is default service
+» is_public|boolean|false|Public if available on portal
+» is_default|boolean|false|If this is default service. Will be selected by default in some scenarios: First arival on portal; Creating appointment on android directly from calendar.
 » _id|string|false|Database record identifier
 » _rev|string|false|Database record revision
 » type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -1592,7 +1324,7 @@ Status|Meaning|Description|Schema
 This operation does not require authentication
 </aside>
 
-# Stats
+# Termin3
 
 ## Termin3ApiStatsOrgCount
 
@@ -1707,6 +1439,274 @@ Status|Meaning|Description|Schema
 ---|---|---|---|
 200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|number(double)
 500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|string
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Termin3ApiOrgDbRead
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X GET //termin3/organizations/{org_db} \
+  -H 'Accept: text/html'
+
+```
+
+```http
+GET //termin3/organizations/{org_db} HTTP/1.1
+Host: null
+
+Accept: text/html
+
+```
+
+```javascript
+var headers = {
+  'Accept':'text/html'
+
+};
+
+$.ajax({
+  url: '//termin3/organizations/{org_db}',
+  method: 'get',
+
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'text/html'
+
+};
+
+fetch('//termin3/organizations/{org_db}',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'text/html'
+}
+
+result = RestClient.get '//termin3/organizations/{org_db}',
+  params: {
+  }, headers: headers
+
+p JSON.parse(result)
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'text/html'
+}
+
+r = requests.get('//termin3/organizations/{org_db}', params={
+
+}, headers = headers)
+
+print r.json()
+```
+
+```java
+URL obj = new URL("//termin3/organizations/{org_db}");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+```
+
+`GET /termin3/organizations/{org_db}`
+
+Fetching organization data from termin3 database. This is not the same as from org database.
+
+<h3 id="Termin3ApiOrgDbRead-parameters">Parameters</h3>
+
+Parameter|In|Type|Required|Description
+---|---|---|---|---|
+org_db|path|string|true|Organization database name
+
+
+> Example responses
+
+```json
+{
+  "db_org": "string",
+  "id_org": "string",
+  "db_owner_initial": "string",
+  "name_initial": "string",
+  "business_initial": "string",
+  "working_hours_from_initial": "string",
+  "working_hours_to_initial": "string",
+  "stats": {
+    "doc_count": {
+      "CommonDbModelDocumentType": 0,
+      "by_day": {
+        "CommonDbModelDocumentType": {
+          "Date": 0
+        }
+      },
+      "total": 0,
+      "processed": 0,
+      "ok": true
+    },
+    "doc_created_min": {
+      "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+      "global": "2017-12-01T23:15:08Z"
+    },
+    "doc_created_max": {
+      "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+      "global": "2017-12-01T23:15:08Z"
+    },
+    "staff": {
+      "admin": {
+        "db": "string",
+        "email": "string",
+        "name": "string"
+      }
+    },
+    "reminder": {
+      "ReminderDbModelStatusCodes": 0,
+      "fail_reason": {
+        "ReminderDbModelErrorCodes": 0
+      }
+    },
+    "last_run": "2017-12-01T23:15:08Z",
+    "termin3_code": "string",
+    "termin3_version": "string",
+    "termin_last_date": "2017-12-01T23:15:08Z",
+    "termins_in_future": 0
+  },
+  "portal": {
+    "domain_name": "string",
+    "org_db": "string",
+    "time_created": "2017-12-01T23:15:08Z",
+    "is_available": true,
+    "is_public": true,
+    "days_ahead": 0
+  },
+  "_id": "string",
+  "_rev": "string",
+  "type": "user",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
+  "user_create": "string",
+  "user_update": "string",
+  "user_delete": "string",
+  "db_origin": "string"
+}
+```
+```json
+"string"
+```
+<h3 id="Termin3ApiOrgDbRead-responses">Responses</h3>
+
+Status|Meaning|Description|Schema
+---|---|---|---|
+200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|Inline
+500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|string
+
+<h3 id="Termin3ApiOrgDbRead-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+db_org|string|false|Organization database name
+id_org|string|false|Original org document ID that exists in db_org database
+db_owner_initial|string|false|User database name (at time of org document creation)
+name_initial|string|false|Organization name (at time of org document creation)
+business_initial|string|false|Business category (at time of org document creation)
+working_hours_from_initial|string|false|Working hours starting time (at time of org document creation). Example: 08:00
+working_hours_to_initial|string|false|Working hours ending time (at time of org document creation). Example: 23:00
+stats|object|false|BI statistics for organization
+» doc_count|object|false|No description
+»» CommonDbModelDocumentType|number(double)|false|Number of documents for each document type
+»» by_day|object|false|Number of documents by document type grouped by dates when they were created
+»»» CommonDbModelDocumentType|object|false|No description
+»»»» Date|number(double)|false|No description
+»» total|number(double)|false|Total number of documents processed by BI for this organization
+»» processed|number(double)|false|Current number of processed documents by BI
+»» ok|boolean|false|BI counting has finished
+» doc_created_min|object|false|Minimum date and time of document creation by document type
+»» CommonDbModelDocumentType|string(date-time)|false|No description
+»» global|string(date-time)|false|Date and time of first document creation
+» doc_created_max|object|false|Maximum date and time of document creation by document type
+»» CommonDbModelDocumentType|string(date-time)|false|No description
+»» global|string(date-time)|false|Date and time of last document creation
+» staff|object|false|Staff stats
+»» admin|object|false|No description
+»»» db|string|false|Staff user db
+»»» email|string|false|Staff username as email
+»»» name|string|false|Staff name
+» reminder|object|false|Reminder stats
+»» ReminderDbModelStatusCodes|number(double)|false|Number of reminders with particular status
+»» fail_reason|object|false|Number of reminders by fail reasons
+»»» ReminderDbModelErrorCodes|number(double)|false|No description
+» last_run|string(date-time)|false|Date and time when BI was run last
+» termin3_code|string|false|Latest used Termin3 Android application code
+» termin3_version|string|false|Latest used Termin3 Android application version
+» termin_last_date|string(date-time)|false|Date when starts the last appointment in organization database
+» termins_in_future|number(double)|false|Number of appointments scheduled in future
+portal|object|false|Portal info
+» domain_name|string|false|Domain name
+» org_db|string|false|Organization database name
+» time_created|string(date-time)|false|Date and time when domain was created
+» is_available|boolean|false|Is domain available. If not then it is already reserved by someone else.
+» is_public|boolean|false|Is domain public, meaning if reserved domain has been publicly released.
+» days_ahead|number(double)|false|Days ahead shown on portal
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
+type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
+time_create|string(date-time)|false|Date and time when record was created
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+
+
+
+<h3 id="Termin3ApiOrgDbRead-responseschema">Response Schema</h3>
+
+Status Code **500**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+simple|string|false|No description
+
+
 
 <aside class="success">
 This operation does not require authentication
@@ -1828,9 +1828,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2010,9 +2010,9 @@ System.out.println(response.toString());
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-28T15:27:45Z",
-    "time_update": "2017-11-28T15:27:45Z",
-    "time_delete": "2017-11-28T15:27:45Z",
+    "time_create": "2017-12-01T23:15:08Z",
+    "time_update": "2017-12-01T23:15:08Z",
+    "time_delete": "2017-12-01T23:15:08Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -2021,9 +2021,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2206,17 +2206,17 @@ System.out.println(response.toString());
 
 ```json
 {
-  "date_expiration": "2017-11-28T15:27:45Z",
-  "date_start": "2017-11-28T15:27:45Z",
+  "date_expiration": "2017-12-01T23:15:08Z",
+  "date_start": "2017-12-01T23:15:08Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2370,9 +2370,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2527,9 +2527,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2698,12 +2698,12 @@ System.out.println(response.toString());
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-      "global": "2017-11-28T15:27:45Z"
+      "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+      "global": "2017-12-01T23:15:08Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-      "global": "2017-11-28T15:27:45Z"
+      "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+      "global": "2017-12-01T23:15:08Z"
     },
     "staff": {
       "admin": {
@@ -2718,16 +2718,16 @@ System.out.println(response.toString());
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-11-28T15:27:45Z",
+    "last_run": "2017-12-01T23:15:08Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-11-28T15:27:45Z",
+    "termin_last_date": "2017-12-01T23:15:08Z",
     "termins_in_future": 0
   },
   "portal": {
     "domain_name": "string",
     "org_db": "string",
-    "time_created": "2017-11-28T15:27:45Z",
+    "time_created": "2017-12-01T23:15:08Z",
     "is_available": true,
     "is_public": true,
     "days_ahead": 0
@@ -2735,9 +2735,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2924,21 +2924,21 @@ System.out.println(response.toString());
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-11-28T15:27:45Z",
-  "end_date": "2017-11-28T15:27:45Z",
+  "start_date": "2017-12-01T23:15:08Z",
+  "end_date": "2017-12-01T23:15:08Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-11-28T15:27:45Z",
+  "cached_until": "2017-12-01T23:15:08Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3101,18 +3101,18 @@ System.out.println(response.toString());
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-11-28T15:27:45Z",
-  "recurring_termin_next_date": "2017-11-28T15:27:45Z",
+  "id_recurring_date": "2017-12-01T23:15:08Z",
+  "recurring_termin_next_date": "2017-12-01T23:15:08Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-11-28T15:27:45Z",
+  "scheduled_time": "2017-12-01T23:15:08Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-11-28T15:27:45Z",
-  "snap_termin_end_time": "2017-11-28T15:27:45Z",
+  "snap_termin_time": "2017-12-01T23:15:08Z",
+  "snap_termin_end_time": "2017-12-01T23:15:08Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -3121,9 +3121,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3302,14 +3302,14 @@ System.out.println(response.toString());
     "service_price": 0,
     "service_currency_code": "string"
   },
-  "is_available_on_portal": true,
+  "is_public": true,
   "is_default": true,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3336,8 +3336,8 @@ payment_info|object|false|Payment info
 » service_ind_free|number(double)|false|Indicator if appointment is free of charge (1: true, 0: false)
 » service_price|number(double)|false|Service price to be payed
 » service_currency_code|string|false|Service price currency code
-is_available_on_portal|boolean|false|If available on portal
-is_default|boolean|false|If this is default service
+is_public|boolean|false|Public if available on portal
+is_default|boolean|false|If this is default service. Will be selected by default in some scenarios: First arival on portal; Creating appointment on android directly from calendar.
 _id|string|false|Database record identifier
 _rev|string|false|Database record revision
 type|string|false|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -3476,9 +3476,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3637,9 +3637,9 @@ System.out.println(response.toString());
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-11-28T15:27:45Z",
+      "time_create": "2017-12-01T23:15:08Z",
       "dates": [
-        "2017-11-28T15:27:45Z"
+        "2017-12-01T23:15:08Z"
       ],
       "description": "string",
       "freq": "once"
@@ -3649,9 +3649,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3804,9 +3804,9 @@ System.out.println(response.toString());
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-11-28T15:27:45Z",
-  "time_end": "2017-11-28T15:27:45Z",
-  "sms_reminder": "2017-11-28T15:27:45Z",
+  "time_start": "2017-12-01T23:15:08Z",
+  "time_end": "2017-12-01T23:15:08Z",
+  "sms_reminder": "2017-12-01T23:15:08Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -3819,9 +3819,9 @@ System.out.println(response.toString());
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-11-28T15:27:45Z",
+  "recurring_exception_date": "2017-12-01T23:15:08Z",
   "recurring_dates": [
-    "2017-11-28T15:27:45Z"
+    "2017-12-01T23:15:08Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -3840,9 +3840,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4022,22 +4022,22 @@ System.out.println(response.toString());
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-11-28T15:27:45Z",
+    "last_active_time": "2017-12-01T23:15:08Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-11-28T15:27:45Z",
+    "review_asked_time": "2017-12-01T23:15:08Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4207,13 +4207,13 @@ System.out.println(response.toString());
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": "string",
-  "email_primary_sent_time": "2017-11-28T15:27:45Z",
+  "email_primary_sent_time": "2017-12-01T23:15:08Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4267,9 +4267,9 @@ This operation does not require authentication
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-11-28T15:27:45Z",
-  "time_end": "2017-11-28T15:27:45Z",
-  "sms_reminder": "2017-11-28T15:27:45Z",
+  "time_start": "2017-12-01T23:15:08Z",
+  "time_end": "2017-12-01T23:15:08Z",
+  "sms_reminder": "2017-12-01T23:15:08Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -4282,9 +4282,9 @@ This operation does not require authentication
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-11-28T15:27:45Z",
+  "recurring_exception_date": "2017-12-01T23:15:08Z",
   "recurring_dates": [
-    "2017-11-28T15:27:45Z"
+    "2017-12-01T23:15:08Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -4303,9 +4303,9 @@ This operation does not require authentication
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4424,7 +4424,7 @@ rev|string|true|New document revision MVCC token
 {
   "domain_name": "string",
   "org_db": "string",
-  "time_created": "2017-11-28T15:27:45Z",
+  "time_created": "2017-12-01T23:15:08Z",
   "is_available": true,
   "is_public": true,
   "days_ahead": 0
@@ -4459,9 +4459,9 @@ days_ahead|number(double)|false|Days ahead shown on portal
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4523,14 +4523,14 @@ type|message_template|
     "service_price": 0,
     "service_currency_code": "string"
   },
-  "is_available_on_portal": true,
+  "is_public": true,
   "is_default": true,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4550,8 +4550,8 @@ payment_info|object|true|Payment info
 » service_ind_free|number(double)|false|Indicator if appointment is free of charge (1: true, 0: false)
 » service_price|number(double)|false|Service price to be payed
 » service_currency_code|string|false|Service price currency code
-is_available_on_portal|boolean|false|If available on portal
-is_default|boolean|false|If this is default service
+is_public|boolean|false|Public if available on portal
+is_default|boolean|false|If this is default service. Will be selected by default in some scenarios: First arival on portal; Creating appointment on android directly from calendar.
 _id|string|true|Database record identifier
 _rev|string|true|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
@@ -4599,12 +4599,12 @@ type|message_template|
     "ok": true
   },
   "doc_created_min": {
-    "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-    "global": "2017-11-28T15:27:45Z"
+    "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+    "global": "2017-12-01T23:15:08Z"
   },
   "doc_created_max": {
-    "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-    "global": "2017-11-28T15:27:45Z"
+    "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+    "global": "2017-12-01T23:15:08Z"
   },
   "staff": {
     "admin": {
@@ -4619,10 +4619,10 @@ type|message_template|
       "ReminderDbModelErrorCodes": 0
     }
   },
-  "last_run": "2017-11-28T15:27:45Z",
+  "last_run": "2017-12-01T23:15:08Z",
   "termin3_code": "string",
   "termin3_version": "string",
-  "termin_last_date": "2017-11-28T15:27:45Z",
+  "termin_last_date": "2017-12-01T23:15:08Z",
   "termins_in_future": 0
 } 
 ```
@@ -4688,12 +4688,12 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-      "global": "2017-11-28T15:27:45Z"
+      "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+      "global": "2017-12-01T23:15:08Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-11-28T15:27:45Z",
-      "global": "2017-11-28T15:27:45Z"
+      "CommonDbModelDocumentType": "2017-12-01T23:15:08Z",
+      "global": "2017-12-01T23:15:08Z"
     },
     "staff": {
       "admin": {
@@ -4708,16 +4708,16 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-11-28T15:27:45Z",
+    "last_run": "2017-12-01T23:15:08Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-11-28T15:27:45Z",
+    "termin_last_date": "2017-12-01T23:15:08Z",
     "termins_in_future": 0
   },
   "portal": {
     "domain_name": "string",
     "org_db": "string",
-    "time_created": "2017-11-28T15:27:45Z",
+    "time_created": "2017-12-01T23:15:08Z",
     "is_available": true,
     "is_public": true,
     "days_ahead": 0
@@ -4725,9 +4725,9 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4824,9 +4824,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4893,9 +4893,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4994,9 +4994,9 @@ type|message_template|
     "_id": "string",
     "_rev": "string",
     "type": "user",
-    "time_create": "2017-11-28T15:27:45Z",
-    "time_update": "2017-11-28T15:27:45Z",
-    "time_delete": "2017-11-28T15:27:45Z",
+    "time_create": "2017-12-01T23:15:08Z",
+    "time_update": "2017-12-01T23:15:08Z",
+    "time_delete": "2017-12-01T23:15:08Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -5005,9 +5005,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5113,17 +5113,17 @@ type|message_template|
 
 ```json
 {
-  "date_expiration": "2017-11-28T15:27:45Z",
-  "date_start": "2017-11-28T15:27:45Z",
+  "date_expiration": "2017-12-01T23:15:08Z",
+  "date_start": "2017-12-01T23:15:08Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5181,9 +5181,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5234,21 +5234,21 @@ type|message_template|
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-11-28T15:27:45Z",
-  "end_date": "2017-11-28T15:27:45Z",
+  "start_date": "2017-12-01T23:15:08Z",
+  "end_date": "2017-12-01T23:15:08Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-11-28T15:27:45Z",
+  "cached_until": "2017-12-01T23:15:08Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5324,18 +5324,18 @@ type|message_template|
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-11-28T15:27:45Z",
-  "recurring_termin_next_date": "2017-11-28T15:27:45Z",
+  "id_recurring_date": "2017-12-01T23:15:08Z",
+  "recurring_termin_next_date": "2017-12-01T23:15:08Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-11-28T15:27:45Z",
+  "scheduled_time": "2017-12-01T23:15:08Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-11-28T15:27:45Z",
-  "snap_termin_end_time": "2017-11-28T15:27:45Z",
+  "snap_termin_time": "2017-12-01T23:15:08Z",
+  "snap_termin_end_time": "2017-12-01T23:15:08Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -5344,9 +5344,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5456,9 +5456,9 @@ type|message_template|
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-11-28T15:27:45Z",
+      "time_create": "2017-12-01T23:15:08Z",
       "dates": [
-        "2017-11-28T15:27:45Z"
+        "2017-12-01T23:15:08Z"
       ],
       "description": "string",
       "freq": "once"
@@ -5468,9 +5468,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5538,22 +5538,22 @@ type|message_template|
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-11-28T15:27:45Z",
+    "last_active_time": "2017-12-01T23:15:08Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-11-28T15:27:45Z",
+    "review_asked_time": "2017-12-01T23:15:08Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5627,13 +5627,13 @@ type|message_template|
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": "string",
-  "email_primary_sent_time": "2017-11-28T15:27:45Z",
+  "email_primary_sent_time": "2017-12-01T23:15:08Z",
   "_id": "string",
   "_rev": "string",
   "type": "user",
-  "time_create": "2017-11-28T15:27:45Z",
-  "time_update": "2017-11-28T15:27:45Z",
-  "time_delete": "2017-11-28T15:27:45Z",
+  "time_create": "2017-12-01T23:15:08Z",
+  "time_update": "2017-12-01T23:15:08Z",
+  "time_delete": "2017-12-01T23:15:08Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
