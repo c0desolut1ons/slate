@@ -161,9 +161,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
 [
   {
     "status": "step_1",
-    "time_start": "2017-12-07T22:06:32Z",
-    "time_end": "2017-12-07T22:06:32Z",
-    "sms_reminder": "2017-12-07T22:06:32Z",
+    "time_start": "2017-12-26T21:49:15Z",
+    "time_end": "2017-12-26T21:49:15Z",
+    "sms_reminder": "2017-12-26T21:49:15Z",
     "note": "string",
     "id_client": "string",
     "id_service": "string",
@@ -176,9 +176,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "id_recurring_meta": "string",
     "freq": "once",
     "recurring_state": "no_recurring",
-    "recurring_exception_date": "2017-12-07T22:06:32Z",
+    "recurring_exception_date": "2017-12-26T21:49:15Z",
     "recurring_dates": [
-      "2017-12-07T22:06:32Z"
+      "2017-12-26T21:49:15Z"
     ],
     "booking_info": {
       "client_name": "string",
@@ -196,10 +196,10 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     },
     "_id": "string",
     "_rev": "string",
-    "type": "user",
-    "time_create": "2017-12-07T22:06:32Z",
-    "time_update": "2017-12-07T22:06:32Z",
-    "time_delete": "2017-12-07T22:06:32Z",
+    "type": "user_t3",
+    "time_create": "2017-12-26T21:49:15Z",
+    "time_update": "2017-12-26T21:49:15Z",
+    "time_delete": "2017-12-26T21:49:15Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -601,8 +601,8 @@ name|path|string|true|
   "domain_name": "string",
   "org_db": "string",
   "is_available": true,
-  "time_reserved": "2017-12-07T22:06:32Z",
-  "time_released": "2017-12-07T22:06:32Z"
+  "time_reserved": "2017-12-26T21:49:16Z",
+  "time_released": "2017-12-26T21:49:16Z"
 }
 ```
 ```json
@@ -798,12 +798,21 @@ org_db|query|string|true|Organization database name
   "reason": {}
 }
 ```
+```json
+{
+  "ok": true,
+  "info": "string",
+  "info_code": "string",
+  "reason": {}
+}
+```
 <h3 id="DomainApiReserve-responses">Responses</h3>
 
 Status|Meaning|Description|Schema
 ---|---|---|---|
 201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Ok|Inline
 400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad request|Inline
+403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|Inline
 500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|Inline
 
 <h3 id="DomainApiReserve-responseschema">Response Schema</h3>
@@ -822,6 +831,19 @@ reason|object|false|Error detailed reason
 <h3 id="DomainApiReserve-responseschema">Response Schema</h3>
 
 Status Code **400**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+ok|boolean|false|Operation status
+info|string|false|Info message
+info_code|string|false|Info code (used for localization)
+reason|object|false|Error detailed reason
+
+
+
+<h3 id="DomainApiReserve-responseschema">Response Schema</h3>
+
+Status Code **403**
 
 Name|Type|Required|Description
 ---|---|---|---|---|
@@ -997,12 +1019,21 @@ org_db|query|string|true|Organization database name
   "reason": {}
 }
 ```
+```json
+{
+  "ok": true,
+  "info": "string",
+  "info_code": "string",
+  "reason": {}
+}
+```
 <h3 id="DomainApiRelease-responses">Responses</h3>
 
 Status|Meaning|Description|Schema
 ---|---|---|---|
 200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|Inline
 400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad request|Inline
+403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|Inline
 500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|Inline
 
 <h3 id="DomainApiRelease-responseschema">Response Schema</h3>
@@ -1021,6 +1052,19 @@ reason|object|false|Error detailed reason
 <h3 id="DomainApiRelease-responseschema">Response Schema</h3>
 
 Status Code **400**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+ok|boolean|false|Operation status
+info|string|false|Info message
+info_code|string|false|Info code (used for localization)
+reason|object|false|Error detailed reason
+
+
+
+<h3 id="DomainApiRelease-responseschema">Response Schema</h3>
+
+Status Code **403**
 
 Name|Type|Required|Description
 ---|---|---|---|---|
@@ -1179,10 +1223,10 @@ org_db|path|string|true|Organization database name
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -1381,10 +1425,10 @@ org_db|path|string|true|Organization database name
     "is_default": true,
     "_id": "string",
     "_rev": "string",
-    "type": "user",
-    "time_create": "2017-12-07T22:06:32Z",
-    "time_update": "2017-12-07T22:06:32Z",
-    "time_delete": "2017-12-07T22:06:32Z",
+    "type": "user_t3",
+    "time_create": "2017-12-26T21:49:16Z",
+    "time_update": "2017-12-26T21:49:16Z",
+    "time_delete": "2017-12-26T21:49:16Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -1455,6 +1499,192 @@ This operation does not require authentication
 </aside>
 
 # Register/login
+
+## RegisterApiAuthenticate
+
+> Code samples
+
+```shell
+# You can also use wget
+curl -X GET //authenticate?user=string&pass=string \
+  -H 'Accept: application/json'
+
+```
+
+```http
+GET //authenticate?user=string&pass=string HTTP/1.1
+Host: null
+
+Accept: application/json
+
+```
+
+```javascript
+var headers = {
+  'Accept':'application/json'
+
+};
+
+$.ajax({
+  url: '//authenticate',
+  method: 'get',
+  data: '?user=string&pass=string',
+  headers: headers,
+  success: function(data) {
+    console.log(JSON.stringify(data));
+  }
+})
+```
+
+```javascript--nodejs
+const request = require('node-fetch');
+
+const headers = {
+  'Accept':'application/json'
+
+};
+
+fetch('//authenticate?user=string&pass=string',
+{
+  method: 'GET',
+
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+```
+
+```ruby
+require 'rest-client'
+require 'json'
+
+headers = {
+  'Accept' => 'application/json'
+}
+
+result = RestClient.get '//authenticate',
+  params: {
+  'user' => 'string',
+'pass' => 'string'
+}, headers: headers
+
+p JSON.parse(result)
+```
+
+```python
+import requests
+headers = {
+  'Accept': 'application/json'
+}
+
+r = requests.get('//authenticate', params={
+  'user': 'string',  'pass': 'string'
+}, headers = headers)
+
+print r.json()
+```
+
+```java
+URL obj = new URL("//authenticate?user=string&pass=string");
+HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+con.setRequestMethod("GET");
+int responseCode = con.getResponseCode();
+BufferedReader in = new BufferedReader(
+    new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer response = new StringBuffer();
+while ((inputLine = in.readLine()) != null) {
+    response.append(inputLine);
+}
+in.close();
+System.out.println(response.toString());
+```
+
+`GET /authenticate`
+
+Returns token for authorized users. Tokens are used for access to restricted API methods.
+
+<h3 id="RegisterApiAuthenticate-parameters">Parameters</h3>
+
+Parameter|In|Type|Required|Description
+---|---|---|---|---|
+user|query|string|true|Username (same as email)
+pass|query|string|true|Raw password (use SSL!)
+
+
+> Example responses
+
+```json
+{
+  "token": "string"
+}
+```
+```json
+{
+  "ok": true,
+  "info": "string",
+  "info_code": "string",
+  "reason": {}
+}
+```
+```json
+{
+  "ok": true,
+  "info": "string",
+  "info_code": "string",
+  "reason": {}
+}
+```
+<h3 id="RegisterApiAuthenticate-responses">Responses</h3>
+
+Status|Meaning|Description|Schema
+---|---|---|---|
+200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|Inline
+403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|Inline
+500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|Inline
+
+<h3 id="RegisterApiAuthenticate-responseschema">Response Schema</h3>
+
+Status Code **200**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+token|string|false|No description
+
+
+
+<h3 id="RegisterApiAuthenticate-responseschema">Response Schema</h3>
+
+Status Code **403**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+ok|boolean|false|Operation status
+info|string|false|Info message
+info_code|string|false|Info code (used for localization)
+reason|object|false|Error detailed reason
+
+
+
+<h3 id="RegisterApiAuthenticate-responseschema">Response Schema</h3>
+
+Status Code **500**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+ok|boolean|false|Operation status
+info|string|false|Info message
+info_code|string|false|Info code (used for localization)
+reason|object|false|Error detailed reason
+
+
+
+<aside class="success">
+This operation does not require authentication
+</aside>
 
 ## RegisterApiLogin
 
@@ -1632,13 +1862,13 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X GET //register?name=string&pass=string&email_primary=string&email_secondary=string \
+curl -X GET //register?name=string&pass=string&email_primary=string \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-GET //register?name=string&pass=string&email_primary=string&email_secondary=string HTTP/1.1
+GET //register?name=string&pass=string&email_primary=string HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -1654,7 +1884,7 @@ var headers = {
 $.ajax({
   url: '//register',
   method: 'get',
-  data: '?name=string&pass=string&email_primary=string&email_secondary=string',
+  data: '?name=string&pass=string&email_primary=string',
   headers: headers,
   success: function(data) {
     console.log(JSON.stringify(data));
@@ -1670,7 +1900,7 @@ const headers = {
 
 };
 
-fetch('//register?name=string&pass=string&email_primary=string&email_secondary=string',
+fetch('//register?name=string&pass=string&email_primary=string',
 {
   method: 'GET',
 
@@ -1695,8 +1925,7 @@ result = RestClient.get '//register',
   params: {
   'name' => 'string',
 'pass' => 'string',
-'email_primary' => 'string',
-'email_secondary' => 'string'
+'email_primary' => 'string'
 }, headers: headers
 
 p JSON.parse(result)
@@ -1709,14 +1938,14 @@ headers = {
 }
 
 r = requests.get('//register', params={
-  'name': 'string',  'pass': 'string',  'email_primary': 'string',  'email_secondary': 'string'
+  'name': 'string',  'pass': 'string',  'email_primary': 'string'
 }, headers = headers)
 
 print r.json()
 ```
 
 ```java
-URL obj = new URL("//register?name=string&pass=string&email_primary=string&email_secondary=string");
+URL obj = new URL("//register?name=string&pass=string&email_primary=string");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("GET");
 int responseCode = con.getResponseCode();
@@ -1733,20 +1962,27 @@ System.out.println(response.toString());
 
 `GET /register`
 
+User registration to Termin3
+
 <h3 id="RegisterApiRegister-parameters">Parameters</h3>
 
 Parameter|In|Type|Required|Description
 ---|---|---|---|---|
-name|query|string|true|Obavezno
-pass|query|string|true|Obavezno
-email_primary|query|string|true|Obavezno
-email_secondary|query|string|true|Opciono
+name|query|string|true|Full name
+pass|query|string|true|Raw password (use SSL!)
+email_primary|query|string|true|Email (wiil be used as username)
+email_secondary|query|string|false|Optional second email (not used at the moment)
 
 
 > Example responses
 
 ```json
-{}
+{
+  "ok": true,
+  "info": "string",
+  "info_code": "string",
+  "reason": {}
+}
 ```
 ```json
 {
@@ -1760,7 +1996,7 @@ email_secondary|query|string|true|Opciono
 
 Status|Meaning|Description|Schema
 ---|---|---|---|
-200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|object
+200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|Inline
 500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|Inline
 
 <h3 id="RegisterApiRegister-responseschema">Response Schema</h3>
@@ -1769,7 +2005,10 @@ Status Code **200**
 
 Name|Type|Required|Description
 ---|---|---|---|---|
-undefined|object|false|No description
+ok|boolean|false|Operation status
+info|string|false|Info message
+info_code|string|false|Info code (used for localization)
+reason|object|false|Error detailed reason
 
 
 
@@ -1923,11 +2162,20 @@ token|header|string|true|Authentication token
   "reason": {}
 }
 ```
+```json
+{
+  "ok": true,
+  "info": "string",
+  "info_code": "string",
+  "reason": {}
+}
+```
 <h3 id="Termin3ApiStatsOrgCount-responses">Responses</h3>
 
 Status|Meaning|Description|Schema
 ---|---|---|---|
 200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|number(double)
+403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|Inline
 500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|Inline
 
 <h3 id="Termin3ApiStatsOrgCount-responseschema">Response Schema</h3>
@@ -1937,6 +2185,19 @@ Status Code **200**
 Name|Type|Required|Description
 ---|---|---|---|---|
 simple|number(double)|false|No description
+
+
+
+<h3 id="Termin3ApiStatsOrgCount-responseschema">Response Schema</h3>
+
+Status Code **403**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+ok|boolean|false|Operation status
+info|string|false|Info message
+info_code|string|false|Info code (used for localization)
+reason|object|false|Error detailed reason
 
 
 
@@ -2101,12 +2362,12 @@ org_db|path|string|true|Organization database name
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-      "global": "2017-12-07T22:06:32Z"
+      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+      "global": "2017-12-26T21:49:16Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-      "global": "2017-12-07T22:06:32Z"
+      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+      "global": "2017-12-26T21:49:16Z"
     },
     "staff": {
       "admin": {
@@ -2121,29 +2382,37 @@ org_db|path|string|true|Organization database name
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-12-07T22:06:32Z",
+    "last_run": "2017-12-26T21:49:16Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-12-07T22:06:32Z",
+    "termin_last_date": "2017-12-26T21:49:16Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2017-12-07T22:06:32Z",
-    "time_released": "2017-12-07T22:06:32Z"
+    "time_reserved": "2017-12-26T21:49:16Z",
+    "time_released": "2017-12-26T21:49:16Z"
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
   "db_origin": "string"
+}
+```
+```json
+{
+  "ok": true,
+  "info": "string",
+  "info_code": "string",
+  "reason": {}
 }
 ```
 ```json
@@ -2159,6 +2428,7 @@ org_db|path|string|true|Organization database name
 Status|Meaning|Description|Schema
 ---|---|---|---|
 200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Ok|Inline
+403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|Inline
 500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal server error|Inline
 
 <h3 id="Termin3ApiOrgDbRead-responseschema">Response Schema</h3>
@@ -2219,6 +2489,19 @@ user_create|string|false|User ID who created record.
 user_update|string|false|User ID who updated record.
 user_delete|string|false|User ID who deleted record.
 db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+
+
+
+<h3 id="Termin3ApiOrgDbRead-responseschema">Response Schema</h3>
+
+Status Code **403**
+
+Name|Type|Required|Description
+---|---|---|---|---|
+ok|boolean|false|Operation status
+info|string|false|Info message
+info_code|string|false|Info code (used for localization)
+reason|object|false|Error detailed reason
 
 
 
@@ -2355,10 +2638,10 @@ System.out.println(response.toString());
   "id_origin": "string",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2537,10 +2820,10 @@ System.out.println(response.toString());
     "pref_default_currency": "string",
     "_id": "string",
     "_rev": "string",
-    "type": "user",
-    "time_create": "2017-12-07T22:06:32Z",
-    "time_update": "2017-12-07T22:06:32Z",
-    "time_delete": "2017-12-07T22:06:32Z",
+    "type": "user_t3",
+    "time_create": "2017-12-26T21:49:16Z",
+    "time_update": "2017-12-26T21:49:16Z",
+    "time_delete": "2017-12-26T21:49:16Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -2548,10 +2831,10 @@ System.out.println(response.toString());
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2734,17 +3017,17 @@ System.out.println(response.toString());
 
 ```json
 {
-  "date_expiration": "2017-12-07T22:06:32Z",
-  "date_start": "2017-12-07T22:06:32Z",
+  "date_expiration": "2017-12-26T21:49:16Z",
+  "date_start": "2017-12-26T21:49:16Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2897,10 +3180,10 @@ System.out.println(response.toString());
   "default": true,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3058,10 +3341,10 @@ System.out.println(response.toString());
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3233,12 +3516,12 @@ System.out.println(response.toString());
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-      "global": "2017-12-07T22:06:32Z"
+      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+      "global": "2017-12-26T21:49:16Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-      "global": "2017-12-07T22:06:32Z"
+      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+      "global": "2017-12-26T21:49:16Z"
     },
     "staff": {
       "admin": {
@@ -3253,25 +3536,25 @@ System.out.println(response.toString());
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-12-07T22:06:32Z",
+    "last_run": "2017-12-26T21:49:16Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-12-07T22:06:32Z",
+    "termin_last_date": "2017-12-26T21:49:16Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2017-12-07T22:06:32Z",
-    "time_released": "2017-12-07T22:06:32Z"
+    "time_reserved": "2017-12-26T21:49:16Z",
+    "time_released": "2017-12-26T21:49:16Z"
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3457,21 +3740,21 @@ System.out.println(response.toString());
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-12-07T22:06:32Z",
-  "end_date": "2017-12-07T22:06:32Z",
+  "start_date": "2017-12-26T21:49:16Z",
+  "end_date": "2017-12-26T21:49:16Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-12-07T22:06:32Z",
+  "cached_until": "2017-12-26T21:49:16Z",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3634,18 +3917,18 @@ System.out.println(response.toString());
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-12-07T22:06:32Z",
-  "recurring_termin_next_date": "2017-12-07T22:06:32Z",
+  "id_recurring_date": "2017-12-26T21:49:16Z",
+  "recurring_termin_next_date": "2017-12-26T21:49:16Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-12-07T22:06:32Z",
+  "scheduled_time": "2017-12-26T21:49:16Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-12-07T22:06:32Z",
-  "snap_termin_end_time": "2017-12-07T22:06:32Z",
+  "snap_termin_time": "2017-12-26T21:49:16Z",
+  "snap_termin_end_time": "2017-12-26T21:49:16Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -3653,10 +3936,10 @@ System.out.println(response.toString());
   "snap_service_name": "string",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3839,10 +4122,10 @@ System.out.println(response.toString());
   "is_default": true,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4008,10 +4291,10 @@ System.out.println(response.toString());
   "pref_default_currency": "string",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4170,9 +4453,9 @@ System.out.println(response.toString());
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-12-07T22:06:32Z",
+      "time_create": "2017-12-26T21:49:16Z",
       "dates": [
-        "2017-12-07T22:06:32Z"
+        "2017-12-26T21:49:16Z"
       ],
       "description": "string",
       "freq": "once"
@@ -4181,10 +4464,10 @@ System.out.println(response.toString());
   "is_available_on_portal": true,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4337,9 +4620,9 @@ System.out.println(response.toString());
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-12-07T22:06:32Z",
-  "time_end": "2017-12-07T22:06:32Z",
-  "sms_reminder": "2017-12-07T22:06:32Z",
+  "time_start": "2017-12-26T21:49:16Z",
+  "time_end": "2017-12-26T21:49:16Z",
+  "sms_reminder": "2017-12-26T21:49:16Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -4352,9 +4635,9 @@ System.out.println(response.toString());
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-12-07T22:06:32Z",
+  "recurring_exception_date": "2017-12-26T21:49:16Z",
   "recurring_dates": [
-    "2017-12-07T22:06:32Z"
+    "2017-12-26T21:49:16Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -4372,10 +4655,10 @@ System.out.println(response.toString());
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4547,6 +4830,7 @@ System.out.println(response.toString());
 {
   "username": "string",
   "name": "string",
+  "email_primary": "string",
   "email_secondary": "string",
   "occupation": "string",
   "phone": "string",
@@ -4555,22 +4839,22 @@ System.out.println(response.toString());
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-12-07T22:06:32Z",
+    "last_active_time": "2017-12-26T21:49:16Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-12-07T22:06:32Z",
+    "review_asked_time": "2017-12-26T21:49:16Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4591,6 +4875,7 @@ Name|Type|Required|Description
 ---|---|---|---|---|
 username|string|false|Username as email
 name|string|false|Full name
+email_primary|string|false|Primary email (same as username)
 email_secondary|string|false|Backup email
 occupation|string|false|Occupation
 phone|string|false|Phone number
@@ -4735,18 +5020,18 @@ System.out.println(response.toString());
   "username": "string",
   "name_initial": "string",
   "id_user": "string",
-  "db_name": "string",
+  "db_user": "string",
   "active": true,
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
-  "email_primary_confirmed": "string",
-  "email_primary_sent_time": "2017-12-07T22:06:32Z",
+  "email_primary_confirmed": true,
+  "email_primary_sent_time": "2017-12-26T21:49:16Z",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4768,11 +5053,11 @@ Name|Type|Required|Description
 username|string|false|Username as email
 name_initial|string|false|Full name as entered for the first time
 id_user|string|false|User database document ID
-db_name|string|false|User database name
+db_user|string|false|User database name
 active|boolean|false|If user is active
 email_primary|string|false|email
 email_primary_confirmation_key|string|false|Confirmation key used for email confirmation
-email_primary_confirmed|string|false|User has confirmed its email
+email_primary_confirmed|boolean|false|User has confirmed its email
 email_primary_sent_time|string(date-time)|false|Date and time confirmation email has been sent
 _id|string|false|Database record identifier
 _rev|string|false|Database record revision
@@ -4800,9 +5085,9 @@ This operation does not require authentication
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-12-07T22:06:32Z",
-  "time_end": "2017-12-07T22:06:32Z",
-  "sms_reminder": "2017-12-07T22:06:32Z",
+  "time_start": "2017-12-26T21:49:16Z",
+  "time_end": "2017-12-26T21:49:16Z",
+  "sms_reminder": "2017-12-26T21:49:16Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -4815,9 +5100,9 @@ This operation does not require authentication
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-12-07T22:06:32Z",
+  "recurring_exception_date": "2017-12-26T21:49:16Z",
   "recurring_dates": [
-    "2017-12-07T22:06:32Z"
+    "2017-12-26T21:49:16Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -4835,10 +5120,10 @@ This operation does not require authentication
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4873,16 +5158,16 @@ payment_info|object|true|Payment info
 » service_ind_free|number(double)|false|Indicator if appointment is free of charge (1: true, 0: false)
 » service_price|number(double)|false|Service price to be payed
 » service_currency_code|string|false|Service price currency code
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 staff|[object]|false|Staff occupied on this appointment
 » id_staff|string|false|Reference to Staff document ID
 » occupation|string|false|Staff occupation code for particular appointment: technician, doctor, employee...
@@ -4911,6 +5196,8 @@ recurring_state|no_recurring|
 recurring_state|original|
 recurring_state|exception|
 recurring_state|virtual|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -4984,8 +5271,8 @@ reason|object|false|Error detailed reason
   "domain_name": "string",
   "org_db": "string",
   "is_available": true,
-  "time_reserved": "2017-12-07T22:06:32Z",
-  "time_released": "2017-12-07T22:06:32Z"
+  "time_reserved": "2017-12-26T21:49:16Z",
+  "time_released": "2017-12-26T21:49:16Z"
 } 
 ```
 
@@ -5019,10 +5306,10 @@ time_released|string(date-time)|false|Date and time when domain was released
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5043,22 +5330,24 @@ working_hours_to|string|true|Working hours ending time. Example: 23:00
 portal_settings|object|false|Portal settings
 » is_public|boolean|false|If portal is publicly available
 » days_ahead|number(double)|false|Days ahead to show on portal
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5091,10 +5380,10 @@ type|message_template|
   "is_default": true,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5116,22 +5405,24 @@ payment_info|object|true|Payment info
 » service_currency_code|string|false|Service price currency code
 is_public|boolean|false|Public if available on portal
 is_default|boolean|false|If this is default service. Will be selected by default in some scenarios: First arival on portal; Creating appointment on android directly from calendar.
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5143,6 +5434,24 @@ type|termin|
 type|recurring_meta|
 type|reminder|
 type|message_template|
+
+
+## TokenApiModel
+
+<a name="schematokenapimodel"></a>
+
+```json
+{
+  "token": "string"
+} 
+```
+
+### Properties
+
+Name|Type|Required|Description
+---|---|---|---|
+token|string|true|No description
+
 
 
 ## OrgTermin3DbModelStats
@@ -5163,12 +5472,12 @@ type|message_template|
     "ok": true
   },
   "doc_created_min": {
-    "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-    "global": "2017-12-07T22:06:32Z"
+    "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+    "global": "2017-12-26T21:49:16Z"
   },
   "doc_created_max": {
-    "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-    "global": "2017-12-07T22:06:32Z"
+    "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+    "global": "2017-12-26T21:49:16Z"
   },
   "staff": {
     "admin": {
@@ -5183,10 +5492,10 @@ type|message_template|
       "ReminderDbModelErrorCodes": 0
     }
   },
-  "last_run": "2017-12-07T22:06:32Z",
+  "last_run": "2017-12-26T21:49:16Z",
   "termin3_code": "string",
   "termin3_version": "string",
-  "termin_last_date": "2017-12-07T22:06:32Z",
+  "termin_last_date": "2017-12-26T21:49:16Z",
   "termins_in_future": 0
 } 
 ```
@@ -5252,12 +5561,12 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-      "global": "2017-12-07T22:06:32Z"
+      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+      "global": "2017-12-26T21:49:16Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-12-07T22:06:32Z",
-      "global": "2017-12-07T22:06:32Z"
+      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
+      "global": "2017-12-26T21:49:16Z"
     },
     "staff": {
       "admin": {
@@ -5272,25 +5581,25 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-12-07T22:06:32Z",
+    "last_run": "2017-12-26T21:49:16Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-12-07T22:06:32Z",
+    "termin_last_date": "2017-12-26T21:49:16Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2017-12-07T22:06:32Z",
-    "time_released": "2017-12-07T22:06:32Z"
+    "time_reserved": "2017-12-26T21:49:16Z",
+    "time_released": "2017-12-26T21:49:16Z"
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5344,22 +5653,24 @@ domain_info|object|true|Domain info
 » is_available|boolean|false|Is domain available. If not then it is already reserved by someone else.
 » time_reserved|string(date-time)|false|Date and time when domain was reserved
 » time_released|string(date-time)|false|Date and time when domain was released
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5385,10 +5696,10 @@ type|message_template|
   "id_origin": "string",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5404,16 +5715,16 @@ name|string|true|Client full name
 phone_mobile|string|true|Client mobile number
 origin|string|true|Client origin codes:<br> <b>device</b>: These client documents are stored localy on devices <br> <b>couchdb</b>: Clients that are stored in Termin3 couchdb database
 id_origin|string|true|DEPRECATED<br> If client document belongs to other database then we store the ID from that database. This is not usable at this moment. Device clients are stored localy
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
@@ -5422,6 +5733,8 @@ db_origin|string|true|Name of organization database where document was originall
 |---|---|
 origin|device|
 origin|couchdb|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5454,10 +5767,10 @@ type|message_template|
   "pref_default_currency": "string",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5480,16 +5793,16 @@ pref_active_user_language|string|true|Active user language
 pref_time_format|string|true|Time format: <br> <b>24H</b>, <b>AM/PM</b>
 pref_send_sms_in_roaming_allowed|boolean|true|Sending SMS while in roaming allowed
 pref_default_currency|string|true|Default currency
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
@@ -5504,6 +5817,8 @@ pref_week_start_day|Sunday|
 pref_week_start_day|Monday|
 pref_time_format|24H|
 pref_time_format|AM/PM|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5555,10 +5870,10 @@ type|message_template|
     "pref_default_currency": "string",
     "_id": "string",
     "_rev": "string",
-    "type": "user",
-    "time_create": "2017-12-07T22:06:32Z",
-    "time_update": "2017-12-07T22:06:32Z",
-    "time_delete": "2017-12-07T22:06:32Z",
+    "type": "user_t3",
+    "time_create": "2017-12-26T21:49:16Z",
+    "time_update": "2017-12-26T21:49:16Z",
+    "time_delete": "2017-12-26T21:49:16Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -5566,10 +5881,10 @@ type|message_template|
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5621,16 +5936,16 @@ settings|object|true|Settings used on this device
 » user_update|string|false|User ID who updated record.
 » user_delete|string|false|User ID who deleted record.
 » db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
@@ -5645,6 +5960,8 @@ db_origin|string|true|Name of organization database where document was originall
 » pref_week_start_day|Monday|
 » pref_time_format|24H|
 » pref_time_format|AM/PM|
+» type|user_t3|
+» type|org_t3|
 » type|user|
 » type|org|
 » type|staff|
@@ -5656,6 +5973,8 @@ db_origin|string|true|Name of organization database where document was originall
 » type|recurring_meta|
 » type|reminder|
 » type|message_template|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5675,17 +5994,17 @@ type|message_template|
 
 ```json
 {
-  "date_expiration": "2017-12-07T22:06:32Z",
-  "date_start": "2017-12-07T22:06:32Z",
+  "date_expiration": "2017-12-26T21:49:16Z",
+  "date_start": "2017-12-26T21:49:16Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5702,22 +6021,24 @@ date_start|string(date-time)|true|Date when licence becomes active
 activated|boolean|true|Is licence activated
 db_org|string|true|Refference to organization database name that licence is for
 appointments_per_month_limit|number(double)|false|Number of maximum allowed appointments per month
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5742,10 +6063,10 @@ type|message_template|
   "default": true,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5760,22 +6081,24 @@ Name|Type|Required|Description
 name|string|true|Template name
 template|string|true|Template content: text and codes that are replaced when creating reminder
 default|boolean|true|Is template default
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5796,21 +6119,21 @@ type|message_template|
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-12-07T22:06:32Z",
-  "end_date": "2017-12-07T22:06:32Z",
+  "start_date": "2017-12-26T21:49:16Z",
+  "end_date": "2017-12-26T21:49:16Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-12-07T22:06:32Z",
+  "cached_until": "2017-12-26T21:49:16Z",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5832,16 +6155,16 @@ custom_days|number(double)|true|Number of days added if until_type is custom
 custom_weeks|number(double)|true|Number of weeks added if until_type is custom
 custom_months|number(double)|true|Number of months added if until_type is custom
 cached_until|string(date-time)|true|Occurence dates are cached in original appointment. They are cached from the beggining until this date
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
@@ -5857,6 +6180,8 @@ freq|custom|
 until_type|counter|
 until_type|until_date|
 until_type|forever|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -5886,18 +6211,18 @@ type|message_template|
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-12-07T22:06:32Z",
-  "recurring_termin_next_date": "2017-12-07T22:06:32Z",
+  "id_recurring_date": "2017-12-26T21:49:16Z",
+  "recurring_termin_next_date": "2017-12-26T21:49:16Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-12-07T22:06:32Z",
+  "scheduled_time": "2017-12-26T21:49:16Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-12-07T22:06:32Z",
-  "snap_termin_end_time": "2017-12-07T22:06:32Z",
+  "snap_termin_time": "2017-12-26T21:49:16Z",
+  "snap_termin_end_time": "2017-12-26T21:49:16Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -5905,10 +6230,10 @@ type|message_template|
   "snap_service_name": "string",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5947,16 +6272,16 @@ snap_org_name|string|true|Cached organization name
 snap_staff_name|string|true|Cached staff name
 snap_staff_phone|string|true|Cached staff phone number
 snap_service_name|string|true|Cached service name
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
@@ -5994,6 +6319,8 @@ before_type|day_before_1|
 before_type|custom_before|
 recipient_type|client|
 recipient_type|staff|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -6018,9 +6345,9 @@ type|message_template|
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-12-07T22:06:32Z",
+      "time_create": "2017-12-26T21:49:16Z",
       "dates": [
-        "2017-12-07T22:06:32Z"
+        "2017-12-26T21:49:16Z"
       ],
       "description": "string",
       "freq": "once"
@@ -6029,10 +6356,10 @@ type|message_template|
   "is_available_on_portal": true,
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6048,16 +6375,16 @@ db_user|string|true|Staff is a user that has it's own database. This is that dat
 id_user|string|true|User ID
 role_in_org|string|true|Role in organization (not used yet)
 is_available_on_portal|boolean|false|If available on portal
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 out_of_office|[object]|false|Out of office days
 » time_create|string(date-time)|false|Time when out of office record was created
 » description|string|false|Out of office record description
@@ -6069,6 +6396,8 @@ out_of_office|[object]|false|Out of office days
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -6092,6 +6421,7 @@ type|message_template|
 {
   "username": "string",
   "name": "string",
+  "email_primary": "string",
   "email_secondary": "string",
   "occupation": "string",
   "phone": "string",
@@ -6100,22 +6430,22 @@ type|message_template|
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-12-07T22:06:32Z",
+    "last_active_time": "2017-12-26T21:49:16Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-12-07T22:06:32Z",
+    "review_asked_time": "2017-12-26T21:49:16Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6129,13 +6459,14 @@ Name|Type|Required|Description
 ---|---|---|---|
 username|string|true|Username as email
 name|string|true|Full name
-email_secondary|string|true|Backup email
-occupation|string|true|Occupation
-phone|string|true|Phone number
-position|string|true|Position in organization
+email_primary|string|false|Primary email (same as username)
+email_secondary|string|false|Backup email
+occupation|string|false|Occupation
+phone|string|false|Phone number
+position|string|false|Position in organization
 db|string|true|User database name
-db_org_current|string|true|Oragnization database name of curently used organization
-info|object|true|Termin3 android application user activity
+db_org_current|string|false|Oragnization database name of curently used organization
+info|object|false|Termin3 android application user activity
 » user_entered_app|boolean|false|User has entered the Termin3 Android app
 » last_active_time|string(date-time)|false|Last active date and time
 » termins_created|number(double)|false|Total number of created appointments in current organization
@@ -6146,22 +6477,24 @@ info|object|true|Termin3 android application user activity
 » review_asked_time|string(date-time)|false|Last date and time user has been asked to leave review on Google Play Store
 » review_clicked|boolean|false|If user has clicked to leave a review
 » review_ask_never|boolean|false|If user has clicked not to be bothered again with ask review
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
@@ -6184,18 +6517,18 @@ type|message_template|
   "username": "string",
   "name_initial": "string",
   "id_user": "string",
-  "db_name": "string",
+  "db_user": "string",
   "active": true,
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
-  "email_primary_confirmed": "string",
-  "email_primary_sent_time": "2017-12-07T22:06:32Z",
+  "email_primary_confirmed": true,
+  "email_primary_sent_time": "2017-12-26T21:49:16Z",
   "_id": "string",
   "_rev": "string",
-  "type": "user",
-  "time_create": "2017-12-07T22:06:32Z",
-  "time_update": "2017-12-07T22:06:32Z",
-  "time_delete": "2017-12-07T22:06:32Z",
+  "type": "user_t3",
+  "time_create": "2017-12-26T21:49:16Z",
+  "time_update": "2017-12-26T21:49:16Z",
+  "time_delete": "2017-12-26T21:49:16Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6210,28 +6543,30 @@ Name|Type|Required|Description
 username|string|true|Username as email
 name_initial|string|true|Full name as entered for the first time
 id_user|string|true|User database document ID
-db_name|string|true|User database name
+db_user|string|true|User database name
 active|boolean|true|If user is active
 email_primary|string|true|email
 email_primary_confirmation_key|string|true|Confirmation key used for email confirmation
-email_primary_confirmed|string|true|User has confirmed its email
-email_primary_sent_time|string(date-time)|true|Date and time confirmation email has been sent
-_id|string|true|Database record identifier
-_rev|string|true|Database record revision
+email_primary_confirmed|boolean|true|User has confirmed its email
+email_primary_sent_time|string(date-time)|false|Date and time confirmation email has been sent
+_id|string|false|Database record identifier
+_rev|string|false|Database record revision
 type|string|true|Database record type. Determines the type of database record <br> System types: <b>user</b>, <b>org</b> <br> Termin3 types: <b>staff</b>, <b>client</b>, <b>licence</b>, <b>service</b>, <b>device</b>, <b>termin</b>, <b>recurring_meta</b>, <b>reminder</b>, <b>message_template</b>
 time_create|string(date-time)|true|Date and time when record was created
-time_update|string(date-time)|true|Date and time when record was updated
-time_delete|string(date-time)|true|Date and time when record was deleted. Deleted records are not removed from database.
-user_create|string|true|User ID who created record.
-user_update|string|true|User ID who updated record.
-user_delete|string|true|User ID who deleted record.
-db_origin|string|true|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
+time_update|string(date-time)|false|Date and time when record was updated
+time_delete|string(date-time)|false|Date and time when record was deleted. Deleted records are not removed from database.
+user_create|string|false|User ID who created record.
+user_update|string|false|User ID who updated record.
+user_delete|string|false|User ID who deleted record.
+db_origin|string|false|Name of organization database where document was originally created. It can be moved to other database via replication. That is whay we need origin.
 
 
 #### Enumerated Values
 
 |Property|Value|
 |---|---|
+type|user_t3|
+type|org_t3|
 type|user|
 type|org|
 type|staff|
