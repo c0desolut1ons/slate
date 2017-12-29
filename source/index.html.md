@@ -161,9 +161,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
 [
   {
     "status": "step_1",
-    "time_start": "2017-12-26T21:49:15Z",
-    "time_end": "2017-12-26T21:49:15Z",
-    "sms_reminder": "2017-12-26T21:49:15Z",
+    "time_start": "2017-12-29T17:28:46Z",
+    "time_end": "2017-12-29T17:28:46Z",
+    "sms_reminder": "2017-12-29T17:28:46Z",
     "note": "string",
     "id_client": "string",
     "id_service": "string",
@@ -176,9 +176,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "id_recurring_meta": "string",
     "freq": "once",
     "recurring_state": "no_recurring",
-    "recurring_exception_date": "2017-12-26T21:49:15Z",
+    "recurring_exception_date": "2017-12-29T17:28:46Z",
     "recurring_dates": [
-      "2017-12-26T21:49:15Z"
+      "2017-12-29T17:28:46Z"
     ],
     "booking_info": {
       "client_name": "string",
@@ -197,9 +197,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2017-12-26T21:49:15Z",
-    "time_update": "2017-12-26T21:49:15Z",
-    "time_delete": "2017-12-26T21:49:15Z",
+    "time_create": "2017-12-29T17:28:46Z",
+    "time_update": "2017-12-29T17:28:46Z",
+    "time_delete": "2017-12-29T17:28:46Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -601,8 +601,8 @@ name|path|string|true|
   "domain_name": "string",
   "org_db": "string",
   "is_available": true,
-  "time_reserved": "2017-12-26T21:49:16Z",
-  "time_released": "2017-12-26T21:49:16Z"
+  "time_reserved": "2017-12-29T17:28:46Z",
+  "time_released": "2017-12-29T17:28:46Z"
 }
 ```
 ```json
@@ -657,14 +657,14 @@ This operation does not require authentication
 
 ```shell
 # You can also use wget
-curl -X POST //domains/{name}?org_db=string \
+curl -X POST //domains/{name}?org_db=string&org_id=string \
   -H 'token: string' \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-POST //domains/{name}?org_db=string HTTP/1.1
+POST //domains/{name}?org_db=string&org_id=string HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -682,7 +682,7 @@ var headers = {
 $.ajax({
   url: '//domains/{name}',
   method: 'post',
-  data: '?org_db=string',
+  data: '?org_db=string&org_id=string',
   headers: headers,
   success: function(data) {
     console.log(JSON.stringify(data));
@@ -699,7 +699,7 @@ const headers = {
 
 };
 
-fetch('//domains/{name}?org_db=string',
+fetch('//domains/{name}?org_db=string&org_id=string',
 {
   method: 'POST',
 
@@ -723,7 +723,8 @@ headers = {
 
 result = RestClient.post '//domains/{name}',
   params: {
-  'org_db' => 'string'
+  'org_db' => 'string',
+'org_id' => 'string'
 }, headers: headers
 
 p JSON.parse(result)
@@ -737,14 +738,14 @@ headers = {
 }
 
 r = requests.post('//domains/{name}', params={
-  'org_db': 'string'
+  'org_db': 'string',  'org_id': 'string'
 }, headers = headers)
 
 print r.json()
 ```
 
 ```java
-URL obj = new URL("//domains/{name}?org_db=string");
+URL obj = new URL("//domains/{name}?org_db=string&org_id=string");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("POST");
 int responseCode = con.getResponseCode();
@@ -770,6 +771,7 @@ Parameter|In|Type|Required|Description
 token|header|string|true|Authentication token
 name|path|string|true|
 org_db|query|string|true|Organization database name
+org_id|query|string|true|Organization document ID
 
 
 > Example responses
@@ -878,14 +880,14 @@ apiKey
 
 ```shell
 # You can also use wget
-curl -X DELETE //domains/{name}?org_db=string \
+curl -X DELETE //domains/{name}?org_db=string&org_id=string \
   -H 'token: string' \
   -H 'Accept: application/json'
 
 ```
 
 ```http
-DELETE //domains/{name}?org_db=string HTTP/1.1
+DELETE //domains/{name}?org_db=string&org_id=string HTTP/1.1
 Host: null
 
 Accept: application/json
@@ -903,7 +905,7 @@ var headers = {
 $.ajax({
   url: '//domains/{name}',
   method: 'delete',
-  data: '?org_db=string',
+  data: '?org_db=string&org_id=string',
   headers: headers,
   success: function(data) {
     console.log(JSON.stringify(data));
@@ -920,7 +922,7 @@ const headers = {
 
 };
 
-fetch('//domains/{name}?org_db=string',
+fetch('//domains/{name}?org_db=string&org_id=string',
 {
   method: 'DELETE',
 
@@ -944,7 +946,8 @@ headers = {
 
 result = RestClient.delete '//domains/{name}',
   params: {
-  'org_db' => 'string'
+  'org_db' => 'string',
+'org_id' => 'string'
 }, headers: headers
 
 p JSON.parse(result)
@@ -958,14 +961,14 @@ headers = {
 }
 
 r = requests.delete('//domains/{name}', params={
-  'org_db': 'string'
+  'org_db': 'string',  'org_id': 'string'
 }, headers = headers)
 
 print r.json()
 ```
 
 ```java
-URL obj = new URL("//domains/{name}?org_db=string");
+URL obj = new URL("//domains/{name}?org_db=string&org_id=string");
 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 con.setRequestMethod("DELETE");
 int responseCode = con.getResponseCode();
@@ -991,6 +994,7 @@ Parameter|In|Type|Required|Description
 token|header|string|true|Authentication token
 name|path|string|true|Domain name
 org_db|query|string|true|Organization database name
+org_id|query|string|true|Organization document ID
 
 
 > Example responses
@@ -1224,9 +1228,9 @@ org_db|path|string|true|Organization database name
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -1426,9 +1430,9 @@ org_db|path|string|true|Organization database name
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2017-12-26T21:49:16Z",
-    "time_update": "2017-12-26T21:49:16Z",
-    "time_delete": "2017-12-26T21:49:16Z",
+    "time_create": "2017-12-29T17:28:46Z",
+    "time_update": "2017-12-29T17:28:46Z",
+    "time_delete": "2017-12-29T17:28:46Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -2362,12 +2366,12 @@ org_db|path|string|true|Organization database name
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-      "global": "2017-12-26T21:49:16Z"
+      "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+      "global": "2017-12-29T17:28:46Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-      "global": "2017-12-26T21:49:16Z"
+      "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+      "global": "2017-12-29T17:28:46Z"
     },
     "staff": {
       "admin": {
@@ -2382,25 +2386,25 @@ org_db|path|string|true|Organization database name
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-12-26T21:49:16Z",
+    "last_run": "2017-12-29T17:28:46Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-12-26T21:49:16Z",
+    "termin_last_date": "2017-12-29T17:28:46Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2017-12-26T21:49:16Z",
-    "time_released": "2017-12-26T21:49:16Z"
+    "time_reserved": "2017-12-29T17:28:46Z",
+    "time_released": "2017-12-29T17:28:46Z"
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2639,9 +2643,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2821,9 +2825,9 @@ System.out.println(response.toString());
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2017-12-26T21:49:16Z",
-    "time_update": "2017-12-26T21:49:16Z",
-    "time_delete": "2017-12-26T21:49:16Z",
+    "time_create": "2017-12-29T17:28:46Z",
+    "time_update": "2017-12-29T17:28:46Z",
+    "time_delete": "2017-12-29T17:28:46Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -2832,9 +2836,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3017,17 +3021,17 @@ System.out.println(response.toString());
 
 ```json
 {
-  "date_expiration": "2017-12-26T21:49:16Z",
-  "date_start": "2017-12-26T21:49:16Z",
+  "date_expiration": "2017-12-29T17:28:46Z",
+  "date_start": "2017-12-29T17:28:46Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3181,9 +3185,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3342,9 +3346,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3516,12 +3520,12 @@ System.out.println(response.toString());
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-      "global": "2017-12-26T21:49:16Z"
+      "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+      "global": "2017-12-29T17:28:46Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-      "global": "2017-12-26T21:49:16Z"
+      "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+      "global": "2017-12-29T17:28:46Z"
     },
     "staff": {
       "admin": {
@@ -3536,25 +3540,25 @@ System.out.println(response.toString());
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-12-26T21:49:16Z",
+    "last_run": "2017-12-29T17:28:46Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-12-26T21:49:16Z",
+    "termin_last_date": "2017-12-29T17:28:46Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2017-12-26T21:49:16Z",
-    "time_released": "2017-12-26T21:49:16Z"
+    "time_reserved": "2017-12-29T17:28:46Z",
+    "time_released": "2017-12-29T17:28:46Z"
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3740,21 +3744,21 @@ System.out.println(response.toString());
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-12-26T21:49:16Z",
-  "end_date": "2017-12-26T21:49:16Z",
+  "start_date": "2017-12-29T17:28:46Z",
+  "end_date": "2017-12-29T17:28:46Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-12-26T21:49:16Z",
+  "cached_until": "2017-12-29T17:28:46Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3917,18 +3921,18 @@ System.out.println(response.toString());
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-12-26T21:49:16Z",
-  "recurring_termin_next_date": "2017-12-26T21:49:16Z",
+  "id_recurring_date": "2017-12-29T17:28:46Z",
+  "recurring_termin_next_date": "2017-12-29T17:28:46Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-12-26T21:49:16Z",
+  "scheduled_time": "2017-12-29T17:28:46Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-12-26T21:49:16Z",
-  "snap_termin_end_time": "2017-12-26T21:49:16Z",
+  "snap_termin_time": "2017-12-29T17:28:46Z",
+  "snap_termin_end_time": "2017-12-29T17:28:46Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -3937,9 +3941,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4123,9 +4127,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4292,9 +4296,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4453,9 +4457,9 @@ System.out.println(response.toString());
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-12-26T21:49:16Z",
+      "time_create": "2017-12-29T17:28:46Z",
       "dates": [
-        "2017-12-26T21:49:16Z"
+        "2017-12-29T17:28:46Z"
       ],
       "description": "string",
       "freq": "once"
@@ -4465,9 +4469,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4620,9 +4624,9 @@ System.out.println(response.toString());
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-12-26T21:49:16Z",
-  "time_end": "2017-12-26T21:49:16Z",
-  "sms_reminder": "2017-12-26T21:49:16Z",
+  "time_start": "2017-12-29T17:28:46Z",
+  "time_end": "2017-12-29T17:28:46Z",
+  "sms_reminder": "2017-12-29T17:28:46Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -4635,9 +4639,9 @@ System.out.println(response.toString());
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-12-26T21:49:16Z",
+  "recurring_exception_date": "2017-12-29T17:28:46Z",
   "recurring_dates": [
-    "2017-12-26T21:49:16Z"
+    "2017-12-29T17:28:46Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -4656,9 +4660,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4839,22 +4843,22 @@ System.out.println(response.toString());
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-12-26T21:49:16Z",
+    "last_active_time": "2017-12-29T17:28:46Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-12-26T21:49:16Z",
+    "review_asked_time": "2017-12-29T17:28:46Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5025,13 +5029,13 @@ System.out.println(response.toString());
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": true,
-  "email_primary_sent_time": "2017-12-26T21:49:16Z",
+  "email_primary_sent_time": "2017-12-29T17:28:46Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5085,9 +5089,9 @@ This operation does not require authentication
 ```json
 {
   "status": "step_1",
-  "time_start": "2017-12-26T21:49:16Z",
-  "time_end": "2017-12-26T21:49:16Z",
-  "sms_reminder": "2017-12-26T21:49:16Z",
+  "time_start": "2017-12-29T17:28:46Z",
+  "time_end": "2017-12-29T17:28:46Z",
+  "sms_reminder": "2017-12-29T17:28:46Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -5100,9 +5104,9 @@ This operation does not require authentication
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2017-12-26T21:49:16Z",
+  "recurring_exception_date": "2017-12-29T17:28:46Z",
   "recurring_dates": [
-    "2017-12-26T21:49:16Z"
+    "2017-12-29T17:28:46Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -5121,9 +5125,9 @@ This operation does not require authentication
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5271,8 +5275,8 @@ reason|object|false|Error detailed reason
   "domain_name": "string",
   "org_db": "string",
   "is_available": true,
-  "time_reserved": "2017-12-26T21:49:16Z",
-  "time_released": "2017-12-26T21:49:16Z"
+  "time_reserved": "2017-12-29T17:28:46Z",
+  "time_released": "2017-12-29T17:28:46Z"
 } 
 ```
 
@@ -5307,9 +5311,9 @@ time_released|string(date-time)|false|Date and time when domain was released
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5381,9 +5385,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5472,12 +5476,12 @@ token|string|true|No description
     "ok": true
   },
   "doc_created_min": {
-    "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-    "global": "2017-12-26T21:49:16Z"
+    "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+    "global": "2017-12-29T17:28:46Z"
   },
   "doc_created_max": {
-    "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-    "global": "2017-12-26T21:49:16Z"
+    "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+    "global": "2017-12-29T17:28:46Z"
   },
   "staff": {
     "admin": {
@@ -5492,10 +5496,10 @@ token|string|true|No description
       "ReminderDbModelErrorCodes": 0
     }
   },
-  "last_run": "2017-12-26T21:49:16Z",
+  "last_run": "2017-12-29T17:28:46Z",
   "termin3_code": "string",
   "termin3_version": "string",
-  "termin_last_date": "2017-12-26T21:49:16Z",
+  "termin_last_date": "2017-12-29T17:28:46Z",
   "termins_in_future": 0
 } 
 ```
@@ -5561,12 +5565,12 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-      "global": "2017-12-26T21:49:16Z"
+      "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+      "global": "2017-12-29T17:28:46Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2017-12-26T21:49:16Z",
-      "global": "2017-12-26T21:49:16Z"
+      "CommonDbModelDocumentType": "2017-12-29T17:28:46Z",
+      "global": "2017-12-29T17:28:46Z"
     },
     "staff": {
       "admin": {
@@ -5581,25 +5585,25 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2017-12-26T21:49:16Z",
+    "last_run": "2017-12-29T17:28:46Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2017-12-26T21:49:16Z",
+    "termin_last_date": "2017-12-29T17:28:46Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2017-12-26T21:49:16Z",
-    "time_released": "2017-12-26T21:49:16Z"
+    "time_reserved": "2017-12-29T17:28:46Z",
+    "time_released": "2017-12-29T17:28:46Z"
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5697,9 +5701,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5768,9 +5772,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5871,9 +5875,9 @@ type|message_template|
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2017-12-26T21:49:16Z",
-    "time_update": "2017-12-26T21:49:16Z",
-    "time_delete": "2017-12-26T21:49:16Z",
+    "time_create": "2017-12-29T17:28:46Z",
+    "time_update": "2017-12-29T17:28:46Z",
+    "time_delete": "2017-12-29T17:28:46Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -5882,9 +5886,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5994,17 +5998,17 @@ type|message_template|
 
 ```json
 {
-  "date_expiration": "2017-12-26T21:49:16Z",
-  "date_start": "2017-12-26T21:49:16Z",
+  "date_expiration": "2017-12-29T17:28:46Z",
+  "date_start": "2017-12-29T17:28:46Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6064,9 +6068,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6119,21 +6123,21 @@ type|message_template|
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2017-12-26T21:49:16Z",
-  "end_date": "2017-12-26T21:49:16Z",
+  "start_date": "2017-12-29T17:28:46Z",
+  "end_date": "2017-12-29T17:28:46Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2017-12-26T21:49:16Z",
+  "cached_until": "2017-12-29T17:28:46Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6211,18 +6215,18 @@ type|message_template|
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2017-12-26T21:49:16Z",
-  "recurring_termin_next_date": "2017-12-26T21:49:16Z",
+  "id_recurring_date": "2017-12-29T17:28:46Z",
+  "recurring_termin_next_date": "2017-12-29T17:28:46Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2017-12-26T21:49:16Z",
+  "scheduled_time": "2017-12-29T17:28:46Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2017-12-26T21:49:16Z",
-  "snap_termin_end_time": "2017-12-26T21:49:16Z",
+  "snap_termin_time": "2017-12-29T17:28:46Z",
+  "snap_termin_end_time": "2017-12-29T17:28:46Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -6231,9 +6235,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6345,9 +6349,9 @@ type|message_template|
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2017-12-26T21:49:16Z",
+      "time_create": "2017-12-29T17:28:46Z",
       "dates": [
-        "2017-12-26T21:49:16Z"
+        "2017-12-29T17:28:46Z"
       ],
       "description": "string",
       "freq": "once"
@@ -6357,9 +6361,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6430,22 +6434,22 @@ type|message_template|
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2017-12-26T21:49:16Z",
+    "last_active_time": "2017-12-29T17:28:46Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2017-12-26T21:49:16Z",
+    "review_asked_time": "2017-12-29T17:28:46Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6522,13 +6526,13 @@ type|message_template|
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": true,
-  "email_primary_sent_time": "2017-12-26T21:49:16Z",
+  "email_primary_sent_time": "2017-12-29T17:28:46Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2017-12-26T21:49:16Z",
-  "time_update": "2017-12-26T21:49:16Z",
-  "time_delete": "2017-12-26T21:49:16Z",
+  "time_create": "2017-12-29T17:28:46Z",
+  "time_update": "2017-12-29T17:28:46Z",
+  "time_delete": "2017-12-29T17:28:46Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
