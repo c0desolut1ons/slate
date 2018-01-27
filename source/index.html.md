@@ -162,9 +162,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
 [
   {
     "status": "step_1",
-    "time_start": "2018-01-26T20:43:56Z",
-    "time_end": "2018-01-26T20:43:56Z",
-    "sms_reminder": "2018-01-26T20:43:56Z",
+    "time_start": "2018-01-26T23:27:51Z",
+    "time_end": "2018-01-26T23:27:51Z",
+    "sms_reminder": "2018-01-26T23:27:51Z",
     "note": "string",
     "id_client": "string",
     "id_service": "string",
@@ -177,9 +177,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "id_recurring_meta": "string",
     "freq": "once",
     "recurring_state": "no_recurring",
-    "recurring_exception_date": "2018-01-26T20:43:56Z",
+    "recurring_exception_date": "2018-01-26T23:27:51Z",
     "recurring_dates": [
-      "2018-01-26T20:43:56Z"
+      "2018-01-26T23:27:51Z"
     ],
     "booking_info": {
       "client_name": "string",
@@ -198,9 +198,9 @@ date_to|query|string|true|Ending date for appointments. If undefined then it is 
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2018-01-26T20:43:56Z",
-    "time_update": "2018-01-26T20:43:56Z",
-    "time_delete": "2018-01-26T20:43:56Z",
+    "time_create": "2018-01-26T23:27:51Z",
+    "time_update": "2018-01-26T23:27:51Z",
+    "time_delete": "2018-01-26T23:27:51Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -602,8 +602,8 @@ name|path|string|true|
   "domain_name": "string",
   "org_db": "string",
   "is_available": true,
-  "time_reserved": "2018-01-26T20:43:56Z",
-  "time_released": "2018-01-26T20:43:56Z"
+  "time_reserved": "2018-01-26T23:27:51Z",
+  "time_released": "2018-01-26T23:27:51Z"
 }
 ```
 ```json
@@ -1229,9 +1229,9 @@ org_db|path|string|true|Organization database name
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -1431,9 +1431,9 @@ org_db|path|string|true|Organization database name
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2018-01-26T20:43:56Z",
-    "time_update": "2018-01-26T20:43:56Z",
-    "time_delete": "2018-01-26T20:43:56Z",
+    "time_create": "2018-01-26T23:27:51Z",
+    "time_update": "2018-01-26T23:27:51Z",
+    "time_delete": "2018-01-26T23:27:51Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -2560,12 +2560,12 @@ org_db|path|string|true|Organization database name
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-      "global": "2018-01-26T20:43:56Z"
+      "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+      "global": "2018-01-26T23:27:51Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-      "global": "2018-01-26T20:43:56Z"
+      "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+      "global": "2018-01-26T23:27:51Z"
     },
     "staff": {
       "admin": {
@@ -2580,25 +2580,25 @@ org_db|path|string|true|Organization database name
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2018-01-26T20:43:56Z",
+    "last_run": "2018-01-26T23:27:51Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2018-01-26T20:43:56Z",
+    "termin_last_date": "2018-01-26T23:27:51Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2018-01-26T20:43:56Z",
-    "time_released": "2018-01-26T20:43:56Z"
+    "time_reserved": "2018-01-26T23:27:51Z",
+    "time_released": "2018-01-26T23:27:51Z"
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2814,9 +2814,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -2996,9 +2996,9 @@ System.out.println(response.toString());
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2018-01-26T20:43:56Z",
-    "time_update": "2018-01-26T20:43:56Z",
-    "time_delete": "2018-01-26T20:43:56Z",
+    "time_create": "2018-01-26T23:27:51Z",
+    "time_update": "2018-01-26T23:27:51Z",
+    "time_delete": "2018-01-26T23:27:51Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -3007,9 +3007,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3192,17 +3192,17 @@ System.out.println(response.toString());
 
 ```json
 {
-  "date_expiration": "2018-01-26T20:43:56Z",
-  "date_start": "2018-01-26T20:43:56Z",
+  "date_expiration": "2018-01-26T23:27:51Z",
+  "date_start": "2018-01-26T23:27:51Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3356,9 +3356,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3517,9 +3517,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3691,12 +3691,12 @@ System.out.println(response.toString());
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-      "global": "2018-01-26T20:43:56Z"
+      "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+      "global": "2018-01-26T23:27:51Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-      "global": "2018-01-26T20:43:56Z"
+      "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+      "global": "2018-01-26T23:27:51Z"
     },
     "staff": {
       "admin": {
@@ -3711,25 +3711,25 @@ System.out.println(response.toString());
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2018-01-26T20:43:56Z",
+    "last_run": "2018-01-26T23:27:51Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2018-01-26T20:43:56Z",
+    "termin_last_date": "2018-01-26T23:27:51Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2018-01-26T20:43:56Z",
-    "time_released": "2018-01-26T20:43:56Z"
+    "time_reserved": "2018-01-26T23:27:51Z",
+    "time_released": "2018-01-26T23:27:51Z"
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -3915,21 +3915,21 @@ System.out.println(response.toString());
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2018-01-26T20:43:56Z",
-  "end_date": "2018-01-26T20:43:56Z",
+  "start_date": "2018-01-26T23:27:51Z",
+  "end_date": "2018-01-26T23:27:51Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2018-01-26T20:43:56Z",
+  "cached_until": "2018-01-26T23:27:51Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4092,18 +4092,18 @@ System.out.println(response.toString());
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2018-01-26T20:43:56Z",
-  "recurring_termin_next_date": "2018-01-26T20:43:56Z",
+  "id_recurring_date": "2018-01-26T23:27:51Z",
+  "recurring_termin_next_date": "2018-01-26T23:27:51Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2018-01-26T20:43:56Z",
+  "scheduled_time": "2018-01-26T23:27:51Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2018-01-26T20:43:56Z",
-  "snap_termin_end_time": "2018-01-26T20:43:56Z",
+  "snap_termin_time": "2018-01-26T23:27:51Z",
+  "snap_termin_end_time": "2018-01-26T23:27:51Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -4112,9 +4112,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4298,9 +4298,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4467,9 +4467,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4628,9 +4628,9 @@ System.out.println(response.toString());
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2018-01-26T20:43:56Z",
+      "time_create": "2018-01-26T23:27:51Z",
       "dates": [
-        "2018-01-26T20:43:56Z"
+        "2018-01-26T23:27:51Z"
       ],
       "description": "string",
       "freq": "once"
@@ -4640,9 +4640,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -4795,9 +4795,9 @@ System.out.println(response.toString());
 ```json
 {
   "status": "step_1",
-  "time_start": "2018-01-26T20:43:56Z",
-  "time_end": "2018-01-26T20:43:56Z",
-  "sms_reminder": "2018-01-26T20:43:56Z",
+  "time_start": "2018-01-26T23:27:51Z",
+  "time_end": "2018-01-26T23:27:51Z",
+  "sms_reminder": "2018-01-26T23:27:51Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -4810,9 +4810,9 @@ System.out.println(response.toString());
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2018-01-26T20:43:56Z",
+  "recurring_exception_date": "2018-01-26T23:27:51Z",
   "recurring_dates": [
-    "2018-01-26T20:43:56Z"
+    "2018-01-26T23:27:51Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -4831,9 +4831,9 @@ System.out.println(response.toString());
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5014,22 +5014,22 @@ System.out.println(response.toString());
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2018-01-26T20:43:56Z",
+    "last_active_time": "2018-01-26T23:27:51Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2018-01-26T20:43:56Z",
+    "review_asked_time": "2018-01-26T23:27:51Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5200,13 +5200,13 @@ System.out.println(response.toString());
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": true,
-  "email_primary_sent_time": "2018-01-26T20:43:56Z",
+  "email_primary_sent_time": "2018-01-26T23:27:51Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5260,9 +5260,9 @@ This operation does not require authentication
 ```json
 {
   "status": "step_1",
-  "time_start": "2018-01-26T20:43:56Z",
-  "time_end": "2018-01-26T20:43:56Z",
-  "sms_reminder": "2018-01-26T20:43:56Z",
+  "time_start": "2018-01-26T23:27:51Z",
+  "time_end": "2018-01-26T23:27:51Z",
+  "sms_reminder": "2018-01-26T23:27:51Z",
   "note": "string",
   "id_client": "string",
   "id_service": "string",
@@ -5275,9 +5275,9 @@ This operation does not require authentication
   "id_recurring_meta": "string",
   "freq": "once",
   "recurring_state": "no_recurring",
-  "recurring_exception_date": "2018-01-26T20:43:56Z",
+  "recurring_exception_date": "2018-01-26T23:27:51Z",
   "recurring_dates": [
-    "2018-01-26T20:43:56Z"
+    "2018-01-26T23:27:51Z"
   ],
   "booking_info": {
     "client_name": "string",
@@ -5296,9 +5296,9 @@ This operation does not require authentication
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5313,18 +5313,18 @@ Name|Type|Required|Description
 status|string|true|Termin status codes:<br> <b>step 1</b>: Should choose service (skipped)<br> <b>step 2</b>: Should choose time <br> <b>step 3</b>: Should choose client <br> <b>confirmed</b>: Confirmed appointment <br> <b>canceled</b>: Appointment that have been canceled <br> <b>noshow</b>: Client didn't show up when scheduled <br> <b>available</b>: Available on portal for booking <br> <b>pending</b> Client booked this appointment and now vaiting for owner to confirm
 time_start|string(date-time)|true|Date and time when appointment starts
 time_end|string(date-time)|true|Date and time when appointment ends
-sms_reminder|string(date-time)|true|Deprecated
-note|string|true|Note about the appointment
-id_client|string|true|Reference to Client document ID
+sms_reminder|string(date-time)|false|Deprecated
+note|string|false|Note about the appointment
+id_client|string|false|Reference to Client document ID
 id_service|string|true|Reference to Service document ID
-id_recurring_meta|string|true|Reference to Recurring Meta document ID
-freq|string|true|Cached recurring frequency codes: <br> <b>once</b> <br> <b>daily</b> <br> <b>weekly</b> <br> <b>monthly</b> <br> <b>yearly</b> <br> <b>custom</b>
-recurring_state|string|true|Cached meta data describing termin object in context of recurring appointments: <br> <b>no_recurring</b>: single, no recurring appointment <br> <b>original</b>: first appointment in the recurring sequence <br> <b>exception</b>: appointment that is exception from recurring sequence <br> <b>virtual</b>: recurring appointment that is not first in the sequence. These are not saved in the database.
-recurring_exception_date|string(date-time)|true|If appointment is recurring exception this is the original date when appointment was part of the sequence
-booking_info|object|true|Booking information left by the client on Termin3 portal
+id_recurring_meta|string|false|Reference to Recurring Meta document ID
+freq|string|false|Cached recurring frequency codes: <br> <b>once</b> <br> <b>daily</b> <br> <b>weekly</b> <br> <b>monthly</b> <br> <b>yearly</b> <br> <b>custom</b>
+recurring_state|string|false|Cached meta data describing termin object in context of recurring appointments: <br> <b>no_recurring</b>: single, no recurring appointment <br> <b>original</b>: first appointment in the recurring sequence <br> <b>exception</b>: appointment that is exception from recurring sequence <br> <b>virtual</b>: recurring appointment that is not first in the sequence. These are not saved in the database.
+recurring_exception_date|string(date-time)|false|If appointment is recurring exception this is the original date when appointment was part of the sequence
+booking_info|object|false|Booking information left by the client on Termin3 portal
 » client_name|string|false|Client name that was enetered by client on portal
 » client_phone_number|string|false|Client phone number that was enetered by client on portal
-payment_info|object|true|Payment info
+payment_info|object|false|Payment info
 » termin_ind_paid|number(double)|false|If appointment is payed (1: payed, 0: not payed)
 » termin_paid_ammount|number(double)|false|Payed ammount
 » termin_paid_currency_code|string|false|Currency code
@@ -5446,8 +5446,8 @@ reason|object|false|Error detailed reason
   "domain_name": "string",
   "org_db": "string",
   "is_available": true,
-  "time_reserved": "2018-01-26T20:43:56Z",
-  "time_released": "2018-01-26T20:43:56Z"
+  "time_reserved": "2018-01-26T23:27:51Z",
+  "time_released": "2018-01-26T23:27:51Z"
 } 
 ```
 
@@ -5482,9 +5482,9 @@ time_released|string(date-time)|false|Date and time when domain was released
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5556,9 +5556,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5647,12 +5647,12 @@ token|string|true|No description
     "ok": true
   },
   "doc_created_min": {
-    "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-    "global": "2018-01-26T20:43:56Z"
+    "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+    "global": "2018-01-26T23:27:51Z"
   },
   "doc_created_max": {
-    "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-    "global": "2018-01-26T20:43:56Z"
+    "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+    "global": "2018-01-26T23:27:51Z"
   },
   "staff": {
     "admin": {
@@ -5667,10 +5667,10 @@ token|string|true|No description
       "ReminderDbModelErrorCodes": 0
     }
   },
-  "last_run": "2018-01-26T20:43:56Z",
+  "last_run": "2018-01-26T23:27:51Z",
   "termin3_code": "string",
   "termin3_version": "string",
-  "termin_last_date": "2018-01-26T20:43:56Z",
+  "termin_last_date": "2018-01-26T23:27:51Z",
   "termins_in_future": 0
 } 
 ```
@@ -5736,12 +5736,12 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
       "ok": true
     },
     "doc_created_min": {
-      "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-      "global": "2018-01-26T20:43:56Z"
+      "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+      "global": "2018-01-26T23:27:51Z"
     },
     "doc_created_max": {
-      "CommonDbModelDocumentType": "2018-01-26T20:43:56Z",
-      "global": "2018-01-26T20:43:56Z"
+      "CommonDbModelDocumentType": "2018-01-26T23:27:51Z",
+      "global": "2018-01-26T23:27:51Z"
     },
     "staff": {
       "admin": {
@@ -5756,25 +5756,25 @@ termins_in_future|number(double)|true|Number of appointments scheduled in future
         "ReminderDbModelErrorCodes": 0
       }
     },
-    "last_run": "2018-01-26T20:43:56Z",
+    "last_run": "2018-01-26T23:27:51Z",
     "termin3_code": "string",
     "termin3_version": "string",
-    "termin_last_date": "2018-01-26T20:43:56Z",
+    "termin_last_date": "2018-01-26T23:27:51Z",
     "termins_in_future": 0
   },
   "domain_info": {
     "domain_name": "string",
     "org_db": "string",
     "is_available": true,
-    "time_reserved": "2018-01-26T20:43:56Z",
-    "time_released": "2018-01-26T20:43:56Z"
+    "time_reserved": "2018-01-26T23:27:51Z",
+    "time_released": "2018-01-26T23:27:51Z"
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5872,9 +5872,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -5943,9 +5943,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6046,9 +6046,9 @@ type|message_template|
     "_id": "string",
     "_rev": "string",
     "type": "user_t3",
-    "time_create": "2018-01-26T20:43:56Z",
-    "time_update": "2018-01-26T20:43:56Z",
-    "time_delete": "2018-01-26T20:43:56Z",
+    "time_create": "2018-01-26T23:27:51Z",
+    "time_update": "2018-01-26T23:27:51Z",
+    "time_delete": "2018-01-26T23:27:51Z",
     "user_create": "string",
     "user_update": "string",
     "user_delete": "string",
@@ -6057,9 +6057,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6169,17 +6169,17 @@ type|message_template|
 
 ```json
 {
-  "date_expiration": "2018-01-26T20:43:56Z",
-  "date_start": "2018-01-26T20:43:56Z",
+  "date_expiration": "2018-01-26T23:27:51Z",
+  "date_start": "2018-01-26T23:27:51Z",
   "activated": true,
   "db_org": "string",
   "appointments_per_month_limit": 0,
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6239,9 +6239,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6294,21 +6294,21 @@ type|message_template|
 ```json
 {
   "id_termin_original": "string",
-  "start_date": "2018-01-26T20:43:56Z",
-  "end_date": "2018-01-26T20:43:56Z",
+  "start_date": "2018-01-26T23:27:51Z",
+  "end_date": "2018-01-26T23:27:51Z",
   "freq": "once",
   "until_type": "counter",
   "until_counter": 0,
   "custom_days": 0,
   "custom_weeks": 0,
   "custom_months": 0,
-  "cached_until": "2018-01-26T20:43:56Z",
+  "cached_until": "2018-01-26T23:27:51Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6386,18 +6386,18 @@ type|message_template|
   "recurring": true,
   "id_termin": "string",
   "id_recurring_meta": "string",
-  "id_recurring_date": "2018-01-26T20:43:56Z",
-  "recurring_termin_next_date": "2018-01-26T20:43:56Z",
+  "id_recurring_date": "2018-01-26T23:27:51Z",
+  "recurring_termin_next_date": "2018-01-26T23:27:51Z",
   "recipient_type": "client",
   "id_client": "string",
   "id_staff": "string",
-  "scheduled_time": "2018-01-26T20:43:56Z",
+  "scheduled_time": "2018-01-26T23:27:51Z",
   "id_device": "string",
   "recipient_phone": "string",
   "id_message_template": "string",
   "message": "string",
-  "snap_termin_time": "2018-01-26T20:43:56Z",
-  "snap_termin_end_time": "2018-01-26T20:43:56Z",
+  "snap_termin_time": "2018-01-26T23:27:51Z",
+  "snap_termin_end_time": "2018-01-26T23:27:51Z",
   "snap_recipient_name": "string",
   "snap_org_name": "string",
   "snap_staff_name": "string",
@@ -6406,9 +6406,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6520,9 +6520,9 @@ type|message_template|
   "role_in_org": "string",
   "out_of_office": [
     {
-      "time_create": "2018-01-26T20:43:56Z",
+      "time_create": "2018-01-26T23:27:51Z",
       "dates": [
-        "2018-01-26T20:43:56Z"
+        "2018-01-26T23:27:51Z"
       ],
       "description": "string",
       "freq": "once"
@@ -6532,9 +6532,9 @@ type|message_template|
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6605,22 +6605,22 @@ type|message_template|
   "db_org_current": "string",
   "info": {
     "user_entered_app": true,
-    "last_active_time": "2018-01-26T20:43:56Z",
+    "last_active_time": "2018-01-26T23:27:51Z",
     "termins_created": 0,
     "services_created": 0,
     "reminders_created": 0,
     "recurring_created": 0,
     "clients_created": 0,
-    "review_asked_time": "2018-01-26T20:43:56Z",
+    "review_asked_time": "2018-01-26T23:27:51Z",
     "review_clicked": true,
     "review_ask_never": true
   },
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
@@ -6697,13 +6697,13 @@ type|message_template|
   "email_primary": "string",
   "email_primary_confirmation_key": "string",
   "email_primary_confirmed": true,
-  "email_primary_sent_time": "2018-01-26T20:43:56Z",
+  "email_primary_sent_time": "2018-01-26T23:27:51Z",
   "_id": "string",
   "_rev": "string",
   "type": "user_t3",
-  "time_create": "2018-01-26T20:43:56Z",
-  "time_update": "2018-01-26T20:43:56Z",
-  "time_delete": "2018-01-26T20:43:56Z",
+  "time_create": "2018-01-26T23:27:51Z",
+  "time_update": "2018-01-26T23:27:51Z",
+  "time_delete": "2018-01-26T23:27:51Z",
   "user_create": "string",
   "user_update": "string",
   "user_delete": "string",
